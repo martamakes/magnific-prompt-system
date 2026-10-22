@@ -1,0 +1,13 @@
+# Solo el sistema: lista blanca
+/*
+!/.gitignore
+!/build-dist.py
+!/prompt-system/
+!/.claude/
+/.claude/*
+!/.claude/skills/
+
+# Material de terceros y basura de macOS
+/prompt-system/TXT_TUTS/
+._*
+.DS_Store

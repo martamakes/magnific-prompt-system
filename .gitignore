@@ -1,6 +1,7 @@
 # Solo el sistema: lista blanca
 /*
 !/.gitignore
+!/README.md
 !/build-dist.py
 !/check-sync.py
 !/prompt-system/

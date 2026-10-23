@@ -18,6 +18,15 @@ Crear desde texto · conservar identidad desde imágenes · identidad + vestuari
 - *Cuerpo entero:* complexión, postura, vestuario.
 - *Vistas:* solo las que hagan falta (espalda, perfil…) para ver construcción de ropa, peinado o rasgos. Si hay plan de referencias, las vistas son las que figuran en él; si no, las que pidan los planos.
 - *Hoja de vistas:* una sola imagen con varias vistas de la misma persona (frente, perfil, espaldas), misma altura, mismo vestuario, fondo liso. Úsala cuando el personaje necesita 2 o más vistas. Indica el sentido del perfil («mirando a la izquierda») y exige coherencia de rostro, peinado y ropa entre vistas.
+  Reglas de la hoja (criterio de trabajo; que el modelo las cumpla está sin comprobar):
+  - *Vistas de cuerpo:* todas de **cuerpo entero**, de la cabeza a los pies con el calzado, a la misma altura y escala y sin recortes en el borde. Si no se quiere cuerpo entero, dilo en el prompt.
+  - *Rasgos fijos, una sola vez y concretos:* peinado (recogido o suelto, con o sin flequillo, altura del moño), color, ropa y complementos se describen una vez y sin alternativas. Un rasgo ambiguo puede salir distinto en cada panel.
+  - *Lo que el cuerpo entero exige y no está definido* (calzado, pantalón…): lo decide la skill y consta como `propuesta`.
+  - *Paneles de detalle* (rostro, manos): indica el encuadre y qué no entra («sin cara», «sin joyas»), para que no se cuele en ellos lo que no pertenece.
+  - *Orden y sentido:* fila de vistas de cuerpo y, aparte, la de detalles; sentido del perfil indicado; paneles separados, sin solaparse.
+  - *Solo las vistas que pida el plan.* Si el usuario aporta una hoja de ejemplo con más vistas, señala cuáles lleva el ejemplo y cuáles pide el plan, y deja que elija; no las añadas por completar el formato.
+  - *Muchos paneles:* si la hoja lleva cinco o más, ofrece partirla en dos (cuerpo entero · detalles), con la primera aprobada como referencia de identidad de la segunda. Es una `propuesta` de trabajo.
+  - *Identidad entre intentos:* cada generación puede dar una persona distinta. Para repetir una hoja, usa como referencia la imagen que ya acierta, declarando qué aporta (rostro, peinado) y qué se ignora (encuadre, paneles).
 - *Hoja de vestuario:* opcional; una sola imagen con la ropa del personaje, para cuando el vestuario importa y debe repetirse igual en varios planos. Parte de la hoja de vistas del personaje (`aprobada`) y hereda su identidad. Contiene, solo lo que la ropa necesita:
   - las vistas del personaje vestido (frente, perfil, espalda; primer plano del cuello y la cara si el cuello o el pelo importan);
   - muestras de tejido de cada prenda y detalles que la distinguen (bolsillo, botón, cuello, calzado…);
@@ -92,5 +101,6 @@ No genera, no elige modelo, no impone paneles (salvo la hoja de vistas o la de v
 - cada imagen tiene declarado qué aporta, qué se ignora y prioridad;
 - los datos del dossier reproducen fielmente lo pedido (sin endurecer «algo hundidos» en «hundidos»); lo añadido consta como `propuesta`;
 - identidad, estado y expresión no se mezclan;
+- en una hoja de vistas: cuerpo entero, rasgos fijos descritos una vez, lo añadido como `propuesta` y solo las vistas del plan;
 - el prompt no se presenta como imagen existente;
 - ninguna capacidad de modelo inventada.

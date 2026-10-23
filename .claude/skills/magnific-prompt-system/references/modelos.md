@@ -4,6 +4,8 @@ Perfil por modelo para que las skills lean el de **la tarea** (REGLAS §5) y no 
 
 **Estado:** primer borrador `propuesta`. Fuente de todo lo marcado «catálogo»: listado de solo lectura del catálogo de Magnific, 2026-10-22. Es lo que el catálogo declara, no una prueba hecha en la app. El usuario lo valida contra la app y, al validar, cambia la fuente de cada campo a «app, fecha».
 
+**Seed y continuidad.** La seed solo repite un resultado si no cambia nada (prompt, ajustes, modelo); no mantiene la identidad de un personaje en otra escena. La continuidad va por referencias aprobadas.
+
 **Reglas de uso**
 - Un valor sin fuente no cuenta. `pendiente de verificar` = nadie lo ha comprobado; no se rellena por parecido con otro modelo.
 - Si el modelo de la tarea no está aquí, se pregunta al usuario o se copia la plantilla (final del archivo) y se rellena con él.
@@ -28,14 +30,14 @@ Perfil por modelo para que las skills lean el de **la tarea** (REGLAS §5) y no 
 | Multiplano en un clip | sí, hasta 6 planos, 1–12 s cada uno, total ≤15 s | catálogo |
 | Movimiento de cámara | lista de 52 valores predefinidos (truckLeft, pushIn, orbitLeft, handheld…) | catálogo |
 | Audio nativo | efectos de sonido admitidos; opción «sin música» disponible; el resumen del catálogo habla de «native audio». Diálogo y sincronía labial: **pendiente de verificar** | catálogo (parcial) |
-| Seed | pendiente de verificar (el catálogo no lo menciona) | — |
+| Seed | **no tiene**: la definición de la herramienta de vídeo dice que Seedance 2.0 y 2.5 no tienen seed y no la usan. No se puede fijar para repetir un resultado | herramienta de generación (`documentada`, 2026-10-23) |
 | Texto dentro del vídeo | no se usa en este flujo (el texto va en el editor); sin verificar | — |
 | Imagen de entrada | jpeg/png/webp/heic/heif; 300–6000 px; proporción 0,4–2,5; límite de peso: valor `30000` sin unidad indicada | catálogo |
 | Vídeo de entrada | mp4/mov; 2–15 s; ≤3 vídeos; ≤200 MB | catálogo |
 | Estado | beta | catálogo |
 
 ### Seedance 2.0 Fast
-Igual que 2.0 salvo: resoluciones 480p · 720p. Resumen del catálogo: borradores rápidos cuando importan los controles de Seedance o el audio nativo. Resto de campos como 2.0 (catálogo); seed y texto, pendiente de verificar.
+Igual que 2.0 salvo: resoluciones 480p · 720p. Resumen del catálogo: borradores rápidos cuando importan los controles de Seedance o el audio nativo. Resto de campos como 2.0 (catálogo); texto, pendiente de verificar. Seed: la fuente cita 2.0 y 2.5, no Fast; pendiente de verificar.
 
 ### Seedance 2.5
 | Campo | Valor | Fuente |
@@ -49,7 +51,8 @@ Igual que 2.0 salvo: resoluciones 480p · 720p. Resumen del catálogo: borradore
 | Primer / último fotograma | como 2.0; no se combinan con referencias | catálogo |
 | Multiplano en un clip | hasta 6 planos, 1–12 s cada uno, total ≤30 s | catálogo |
 | Audio nativo | el resumen del catálogo cita audio nativo y lipsync; detalle de diálogo: pendiente de verificar | catálogo (parcial) |
-| Seed · texto en vídeo | pendiente de verificar | — |
+| Seed | **no tiene** (misma fuente que 2.0) | herramienta de generación (`documentada`, 2026-10-23) |
+| Texto dentro del vídeo | no se usa en este flujo; sin verificar | — |
 | Estado | beta; destacado | catálogo |
 
 ### Otros de vídeo en el catálogo (sin perfil completo)
@@ -69,7 +72,7 @@ Fuente de las tres líneas: catálogo, 2026-10-22. Si una tarea usa alguno, se r
 | Proporciones | auto · 1:1 · 21:9 · 16:9 · 9:16 · 4:3 · 4:5 · 5:4 · 3:4 · 3:2 · 2:3 | catálogo |
 | Resoluciones | el catálogo no lista ninguna: pendiente de verificar | — |
 | Referencias | sí; tipos: estilo · personaje · producto · imagen. Cuántas: pendiente de verificar | catálogo (parcial) |
-| Seed | pendiente de verificar | — |
+| Seed | la herramienta de imagen admite una seed: con la misma seed y los mismos ajustes se reproduce un resultado; con varias variantes cada una usa seed + su índice. Que lo respete cada modelo: pendiente de verificar | herramienta de generación (`documentada`, 2026-10-23) |
 | Texto dentro de la imagen | no se usa en este flujo (el texto va en el editor); sin verificar | — |
 | Edición con imagen de entrada | pendiente de verificar | — |
 | Requiere plan premium | sí | catálogo |
@@ -81,7 +84,7 @@ Fuente de las tres líneas: catálogo, 2026-10-22. Si una tarea usa alguno, se r
 | Nano Banana 2 Lite | 1:1 · 2:3 · 3:2 · 4:3 · 3:4 · 5:4 · 4:5 · 16:9 · 9:16 · 21:9 | no lista | rápido y barato; para borradores e iteración |
 | Nano Banana Pro | como el base | 1k · 2k · 4k | máxima fidelidad en un activo final; sirve para consistencia de personaje y referencias según el catálogo |
 | Nano Banana 2.1 | — | 1k · 2k · 4k | `private`, no disponible en general |
-Todas: referencias de estilo · personaje · producto · imagen. Seed y texto en imagen: pendiente de verificar en todas.
+Todas: referencias de estilo · personaje · producto · imagen. Texto en imagen: pendiente de verificar en todas. Seed: ver el modelo base.
 
 ---
 

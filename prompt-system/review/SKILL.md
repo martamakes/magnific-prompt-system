@@ -17,6 +17,7 @@ Contrastar el desglose con un estilo (`estilos/<nombre>.md`) y devolver una list
 
 ## Procedimiento
 1. Lee `Audio:`, el destino (`PLATAFORMAS.md`) y las restricciones del dossier. Respétalos por encima del estilo.
+1b. Si el desglose ya contiene una revisión de estilo anterior, léela: no repitas lo aplicado ni lo rechazado; diagnostica sobre la versión actual y retoma solo lo que sigue pendiente.
 2. **Diagnóstico**: cuenta, con datos del propio desglose, cuántos planos repiten encuadre, ángulo y cámara (p. ej. «5 de 7 son frontales y fijos»). Sin cifras no hay diagnóstico.
 3. Contrasta con la lista de comprobación del estilo.
 4. **Propuestas**: por cada plano a cambiar, la alternativa en términos observables (dónde está la cámara, qué ocupa el cuadro, qué cambia, cómo termina), la función que cumple y el riesgo para la lectura o la continuidad. Los planos que no necesitan cambio se dejan: un plano sencillo puede ser la pausa o el contraste.

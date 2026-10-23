@@ -16,12 +16,12 @@ DIST = ROOT / "dist"
 OUT = DIST / "magnific-prompt-system"
 REFS = OUT / "references"
 
-SKILLS = ["brief", "script", "breakdown", "character-ref", "prop-ref", "location-ref", "shot-composer", "video-prompt", "audio-prompt", "edit-plan", "repair"]
+SKILLS = ["brief", "script", "breakdown", "review", "character-ref", "prop-ref", "location-ref", "shot-composer", "video-prompt", "audio-prompt", "edit-plan", "repair"]
 DIRECTOR_DESC = (
     "Prepara por escrito producciones audiovisuales con IA para pegar los prompts en Magnific "
     "(imagen Nano Banana, vídeo Seedance). Úsala cuando el usuario diga «oye Amenábar», «Amenábar, …», "
     "«sigue mi proyecto», «¿en qué fase estoy?» o «¿qué toca ahora?», o pegue un dossier; también para "
-    "brief, guion, desglose, plan de referencias y referencias de personaje, localización u objeto e imagen inicial y prompt de vídeo de un plano. "
+    "brief, guion, desglose, revisión del desglose con un estilo («revisa con estilo redes»), plan de referencias y referencias de personaje, localización u objeto e imagen inicial y prompt de vídeo de un plano. "
     "Dice en qué fase está el proyecto y cuál es el siguiente paso. No genera imágenes ni vídeo. "
     "Audio: sin audio, externo o en Magnific, según el proyecto."
 )
@@ -36,6 +36,7 @@ def fix_paths(text: str) -> str:
     text = re.sub(r"PROYECTO\.md", "references/proyecto.md", text)
     text = re.sub(r"MODELOS\.md", "references/modelos.md", text)
     text = re.sub(r"PLATAFORMAS\.md", "references/plataformas.md", text)
+    text = re.sub(r"(?<![/\w])estilos/", "references/estilos/", text)
     return re.sub(r"EX00_KISS\.md", "references/ex00-kiss.md", text)
 
 
@@ -64,6 +65,11 @@ for name in SKILLS:
 (REFS / "ex00-kiss.md").write_text(
     fix_paths((SRC / "EX00_KISS.md").read_text(encoding="utf-8")), encoding="utf-8"
 )
+(REFS / "estilos").mkdir()
+for style in sorted((SRC / "estilos").glob("*.md")):
+    (REFS / "estilos" / style.name).write_text(
+        fix_paths(style.read_text(encoding="utf-8")), encoding="utf-8"
+    )
 (REFS / "guia-usuario.md").write_text(
     fix_paths((SRC / "FLUJO-idea-a-desglose.md").read_text(encoding="utf-8")), encoding="utf-8"
 )

@@ -35,6 +35,7 @@ Copia esa frase tal cual. No ejecuta nada por su cuenta: espera tu orden.
 1. **Brief.** Responde a sus preguntas (máx. 3). «A tu criterio» y «sin marca» valen. Te preguntará por el audio: la opción recomendada es **sin audio**; las otras son **audio externo** y **audio en Magnific** (más gasto y más riesgo de fallo).
 2. **Guion.** Lo inventado va como `propuesta`. El desglose no empieza sin que apruebes el guion.
 3. **Desglose.** Planos y recursos. Revisa duraciones y «Decisiones pendientes».
+   - *Opcional, antes del plan de referencias:* **revisión de estilo.** Si el desglose te sale estático, di `Amenábar, revisa con estilo redes`. Recibes un diagnóstico con cifras y propuestas por plano; eliges cuáles se aplican. Estilo disponible hoy: `redes` (vídeo corto vertical); otros irán en `estilos/`.
 4. **Plan de referencias.** Tras aprobar el desglose te da la lista `REF-01, REF-02…`: qué imágenes hay que crear y en qué orden. Las vistas salen de los planos.
 5. **Referencias.** Una REF cada vez. Para cada una recibes un prompt; lo generas en Magnific y vuelves a decir si queda aprobada.
 

@@ -38,12 +38,14 @@ Si el usuario solo te llama («oye Amenábar», «sigue mi proyecto»), o pega u
 | Imagen inicial de un plano | shot-composer |
 | Prompt de vídeo | video-prompt |
 | Prompt de música, efectos, voz o ambiente | audio-prompt |
+| «Revisa con estilo [nombre]», desglose estático (después del desglose, antes del plan de referencias) | review |
 | Resultado que falló | repair |
 | Orden de clips, cortes, colocación del sonido | edit-plan |
 
 4. Los límites técnicos de los modelos (duración, referencias, fotogramas) están en `MODELOS.md`; las skills los leen de ahí y no los inventan.
 5. Las zonas seguras por destino (Reels, TikTok) están en `PLATAFORMAS.md`; las skills las leen de ahí y no las inventan.
-6. Si la skill destino aún no existe, dilo y prepara lo que se pueda con REGLAS.md.
+6. Los estilos de `review` están en `estilos/` (hoy: `redes`); `review` solo propone, y nada entra en el desglose sin aprobación.
+7. Si la skill destino aún no existe, dilo y prepara lo que se pueda con REGLAS.md.
 
 ## Cierre
 Toda respuesta termina con una línea de siguiente paso, separada del entregable para que el prompt se copie limpio:

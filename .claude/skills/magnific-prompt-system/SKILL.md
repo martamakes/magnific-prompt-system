@@ -1,6 +1,6 @@
 ---
 name: magnific-prompt-system
-description: Prepara por escrito producciones audiovisuales con IA para pegar los prompts en Magnific (imagen Nano Banana, vídeo Seedance). Úsala cuando el usuario diga «oye Amenábar», «Amenábar, …», «sigue mi proyecto», «¿en qué fase estoy?» o «¿qué toca ahora?», o pegue un dossier; también para brief, guion, desglose, plan de referencias y referencias de personaje, localización u objeto e imagen inicial y prompt de vídeo de un plano. Dice en qué fase está el proyecto y cuál es el siguiente paso. No genera imágenes ni vídeo. Audio: sin audio, externo o en Magnific, según el proyecto.
+description: Prepara por escrito producciones audiovisuales con IA para pegar los prompts en Magnific (imagen Nano Banana, vídeo Seedance). Úsala cuando el usuario diga «oye Amenábar», «Amenábar, …», «sigue mi proyecto», «¿en qué fase estoy?» o «¿qué toca ahora?», o pegue un dossier; también para brief, guion, desglose, revisión del desglose con un estilo («revisa con estilo redes»), plan de referencias y referencias de personaje, localización u objeto e imagen inicial y prompt de vídeo de un plano. Dice en qué fase está el proyecto y cuál es el siguiente paso. No genera imágenes ni vídeo. Audio: sin audio, externo o en Magnific, según el proyecto.
 ---
 
 # Director
@@ -38,12 +38,14 @@ Si el usuario solo te llama («oye Amenábar», «sigue mi proyecto»), o pega u
 | Imagen inicial de un plano | `references/shot-composer.md` |
 | Prompt de vídeo | `references/video-prompt.md` |
 | Prompt de música, efectos, voz o ambiente | `references/audio-prompt.md` |
+| «Revisa con estilo [nombre]», desglose estático (después del desglose, antes del plan de referencias) | `references/review.md` |
 | Resultado que falló | `references/repair.md` |
 | Orden de clips, cortes, colocación del sonido | `references/edit-plan.md` |
 
 4. Los límites técnicos de los modelos (duración, referencias, fotogramas) están en `references/modelos.md`; las skills los leen de ahí y no los inventan.
 5. Las zonas seguras por destino (Reels, TikTok) están en `references/plataformas.md`; las skills las leen de ahí y no las inventan.
-6. Si la skill destino aún no existe, dilo y prepara lo que se pueda con references/reglas.md.
+6. Los estilos de `review` están en `references/estilos/` (hoy: `redes`); `review` solo propone, y nada entra en el desglose sin aprobación.
+7. Si la skill destino aún no existe, dilo y prepara lo que se pueda con references/reglas.md.
 
 ## Cierre
 Toda respuesta termina con una línea de siguiente paso, separada del entregable para que el prompt se copie limpio:

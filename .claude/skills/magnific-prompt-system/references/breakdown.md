@@ -105,6 +105,17 @@ Sin perfil del modelo o con el máximo pendiente de verificar, los bloques se pr
 - La alternativa más sencilla conserva las restricciones del encargo (número de planos, duración, condiciones). Si solo hay alternativa cambiándolas, pide autorización en vez de aplicarla.
 - No afirmes que agrupar sea más sencillo sin justificarlo; la viabilidad de un clip con cortes depende del modelo y queda pendiente de verificar.
 
+### Acción común con variantes de entorno
+Solo cuando el guion lo pida, identifica los planos que repiten una acción en distintos entornos:
+- qué permanece: identidad, acción y, cuando proceda, encuadre o cámara;
+- qué cambia: localización, atmósfera, vestuario u otros elementos;
+- referencia común, si existe, y papel que cumple;
+- punto previsto de enlace: fase del gesto, dirección del movimiento y posición del sujeto en cuadro.
+
+Es un patrón de planificación, no una garantía de repetición exacta. Cada variante conserva su identificador y su vía de producción. La unión se anota como prevista; su resolución corresponde a `edit-plan`.
+
+No presupongas que todas las variantes deban generarse en un solo clip ni cambies el número de planos o la duración aprobados.
+
 ## Entradas
 Guion (o sección GUION). Si no existe, pide el guion o sugiere pasar por script. Acepta un guion equivalente aportado por el usuario.
 

@@ -24,6 +24,18 @@ Entregar el prompt que describe qué ocurre en el tiempo en un plano: acción, c
 - **Imagen a vídeo:** la imagen ya fija lo que se ve (personajes, lugar, luz, encuadre inicial). El prompt describe solo lo que cambia: movimiento, cámara, evolución de la luz o del estado. No redescribas la imagen ni contradigas nada de ella.
 - **Texto a vídeo o con referencias:** el prompt lleva además sujeto, lugar y luz, y cada referencia con su papel (qué aporta, qué se ignora, cuál prevalece), igual que en las demás skills.
 
+### Con vídeo de referencia
+Cuando el plano use un clip como referencia, explicita el reparto:
+- **Identidad:** qué referencia fija al personaje y, si procede, su vestuario.
+- **Acción:** qué se toma del clip (gesto, recorrido, ritmo o movimiento de cámara). No supongas que se hereda todo.
+- **Cambios:** qué se sustituye respecto al clip y qué debe conservarse.
+
+Redacta la transformación de forma directa: qué elemento de qué referencia se sustituye por cuál. Usa etiquetas de recursos solo si su sintaxis está confirmada para el modelo y la interfaz de la tarea.
+
+Que el catálogo admita vídeo de referencia no demuestra transferencia exacta de movimiento ni sustitución de personajes (`MODELOS.md`). Ese comportamiento queda pendiente de verificar en la app; la intención del prompt no se presenta como capacidad comprobada.
+
+Usa material propio o con autorización adecuada; que la herramienta acepte un recurso no acredita permiso para reutilizarlo.
+
 ## Contenido del prompt
 No hay fórmula obligatoria. Incluye, en este orden salvo que convenga otro:
 1. **Acción** observable, en sucesión temporal (REGLAS §8: gesto, no interpretación; separa expresión, acción corporal y vocal).

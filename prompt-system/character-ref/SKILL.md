@@ -25,7 +25,7 @@ Crear desde texto · conservar identidad desde imágenes · identidad + vestuari
   - *Paneles de detalle* (rostro, manos): indica el encuadre y qué no entra («sin cara», «sin joyas»), para que no se cuele en ellos lo que no pertenece.
   - *Orden y sentido:* fila de vistas de cuerpo y, aparte, la de detalles; sentido del perfil indicado; paneles separados, sin solaparse.
   - *Solo las vistas que pida el plan.* Si el usuario aporta una hoja de ejemplo con más vistas, señala cuáles lleva el ejemplo y cuáles pide el plan, y deja que elija; no las añadas por completar el formato.
-  - *Muchos paneles:* si la hoja lleva cinco o más, ofrece partirla en dos (cuerpo entero · detalles), con la primera aprobada como referencia de identidad de la segunda. Es una `propuesta` de trabajo.
+  - *Muchos paneles:* si la hoja lleva cinco o más y no sale bien, ofrece partirla en dos (cuerpo entero · detalles), con la primera aprobada como referencia de identidad de la segunda. Es una `propuesta` de trabajo.
   - *Identidad entre intentos:* cada generación puede dar una persona distinta. Para repetir una hoja, usa como referencia la imagen que ya acierta, declarando qué aporta (rostro, peinado) y qué se ignora (encuadre, paneles).
 - *Hoja de vestuario:* opcional; una sola imagen con la ropa del personaje, para cuando el vestuario importa y debe repetirse igual en varios planos. Parte de la hoja de vistas del personaje (`aprobada`) y hereda su identidad. Contiene, solo lo que la ropa necesita:
   - las vistas del personaje vestido (frente, perfil, espalda; primer plano del cuello y la cara si el cuello o el pelo importan);

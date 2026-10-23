@@ -47,6 +47,8 @@ Solo cuando haya personajes u objetos que interactúan en el espacio; no es obli
 Define la geografía una vez y mantenla; no añadas movimientos para arreglar una contradicción previa.
 
 ## B. Desglose de recursos
+Todos los planos del desglose técnico se mantienen, y cada uno tendrá su imagen inicial (`shot-composer`). Lo que se limita son las **referencias**: solo lo que necesita continuidad, es decir un personaje, un objeto concreto o un lugar que reaparece y debe verse igual, o cuya identidad importa. Lo genérico, de un solo uso o de fondo no lleva referencia: se describe en el prompt del plano. Lo que sí necesita continuidad no se deja a la invención del modelo: lleva referencia aprobada (o foto real aportada) antes de componer los planos que lo usan, y si falta se señala como bloqueo, no se improvisa. Si dudas de si algo necesita continuidad, pregúntalo.
+
 - personajes y estados;
 - vestuario;
 - props y estados;
@@ -82,10 +84,12 @@ Una fila por referencia, numerada (`REF-01`, `REF-02`…):
 |---|---|---|---|---|---|
 
 Reglas:
+- **Referencias solo de lo que necesita continuidad** (ver B). Un elemento que aparece una vez, es genérico o queda de fondo no tiene `REF`, pero su plano sigue en el desglose. Lo que sí la necesita no se deja al modelo: sin `REF` aprobada, sus planos no se componen. Con dudas, se pregunta.
+- **Una referencia por recurso**, una sola imagen cada vez que baste. Un personaje es una hoja de vistas única; partirla en dos solo si el usuario lo pide o una hoja no sale.
 - **Las vistas salen de los planos**, no de una plantilla. Si un plano muestra a Isabel de perfil, pide perfil; si los vecinos salen de espaldas, pide espaldas. Si ningún plano necesita una vista, no la pidas.
 - **Hoja de vistas** (frente, perfil, espaldas en una sola imagen) cuando un personaje necesita 2 o más vistas; imagen única en los demás casos.
 - **Estados y variantes** (vestuario, peinado, daño, versión «pintado» frente a «vivo») son referencias aparte, con identidad heredada de la base.
-- Incluye también objetos, localizaciones y combinaciones personaje + vestuario que los planos usen.
+- Incluye también objetos, localizaciones y combinaciones personaje + vestuario, solo si necesitan continuidad.
 - **Hoja de vestuario** (`character-ref`): línea opcional, solo si el vestuario es importante y se repite en varios planos. Prioridad Media por defecto; Alta solo si el usuario lo pide. Si no se quiere, no se genera y no bloquea.
 - **Objeto real de marca o de la colección:** si el usuario tiene foto real, se usa como referencia directa y no se genera una versión nueva (puede deformar textos y detalles). Anota qué vista falta si los planos lo muestran desde otro lado.
 - **Prioridad:** Alta si bloquea planos de varias escenas o el protagonista; Media si afecta a una escena; Baja si es de fondo.

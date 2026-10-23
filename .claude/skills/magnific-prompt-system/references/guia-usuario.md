@@ -70,6 +70,19 @@ Si lo que te da Amenábar no lo entiendes o no encaja, escríbelo con tus palabr
 
 ---
 
+## Si trabajas desde el chat web
+
+El chat no guarda nada entre conversaciones y el sistema no escribe en tu disco: **tu dossier es la memoria, y lo guardas tú** (un documento tuyo: Notas, Word, un `.md`).
+
+- **Tras cada fase:** copia la sección que te da («lista para pegar») a tu dossier y actualiza `# ESTADO`. Lo que no copies, se pierde al cerrar la conversación.
+- **Al abrir una conversación nueva:** pega el dossier completo debajo de `Oye Amenábar, sigue mi proyecto. ¿Qué toca ahora?`.
+- **Guion y desglose:** déjalos dentro del dossier. Los archivos aparte (`guion.md`, `desglose.md`) solo ayudan donde Claude lee y escribe ficheros; en el chat, si el dossier te queda demasiado largo, pega también ese texto a mano.
+- **Cargar el sistema:** si no tienes la skill instalada, pega en la conversación `references/reglas.md` y el archivo de la fase en que estés. Subir la skill como paquete, adjuntar archivos o usar Proyectos en tu plan: **pendiente de verificar**.
+- **Imágenes:** se generan en Magnific. Anota en el dossier cómo la reconoces (nombre o enlace) y su estado. Para usar una aprobada como referencia, súbela de nuevo a Magnific; adjuntarla al chat para pedir una revisión: **pendiente de verificar** en tu plan.
+- **Si Claude contradice el dossier,** manda el dossier: «según mi dossier, X está aprobado; corrige tu respuesta».
+
+---
+
 ## Reglas
 
 - **Una conversación nueva por fase**, con el dossier pegado (plantilla en `references/proyecto.md`). Así no se pierde el hilo.

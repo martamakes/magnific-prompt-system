@@ -2,6 +2,7 @@
 /*
 !/.gitignore
 !/build-dist.py
+!/check-sync.py
 !/prompt-system/
 !/.claude/
 /.claude/*

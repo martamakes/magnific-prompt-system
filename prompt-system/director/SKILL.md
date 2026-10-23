@@ -39,6 +39,7 @@ Si el usuario solo te llama («oye Amenábar», «sigue mi proyecto»), o pega u
 | Prompt de vídeo | video-prompt |
 | Prompt de música, efectos, voz o ambiente | audio-prompt |
 | «Revisa con estilo [nombre]», desglose estático (después del desglose, antes del plan de referencias) | review |
+| «Comprueba coherencia», «¿está todo alineado?» (también al cerrar una fase) | coherencia |
 | Resultado que falló | repair |
 | Orden de clips, cortes, colocación del sonido | edit-plan |
 

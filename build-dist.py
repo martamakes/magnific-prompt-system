@@ -16,7 +16,7 @@ DIST = ROOT / "dist"
 OUT = DIST / "magnific-prompt-system"
 REFS = OUT / "references"
 
-SKILLS = ["brief", "script", "breakdown", "review", "character-ref", "prop-ref", "location-ref", "shot-composer", "video-prompt", "audio-prompt", "edit-plan", "repair"]
+SKILLS = ["brief", "script", "breakdown", "review", "coherencia", "character-ref", "prop-ref", "location-ref", "shot-composer", "video-prompt", "audio-prompt", "edit-plan", "repair"]
 DIRECTOR_DESC = (
     "Prepara por escrito producciones audiovisuales con IA para pegar los prompts en Magnific "
     "(imagen Nano Banana, vídeo Seedance). Úsala cuando el usuario diga «oye Amenábar», «Amenábar, …», "

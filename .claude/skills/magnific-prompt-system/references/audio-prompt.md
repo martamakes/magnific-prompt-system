@@ -53,7 +53,7 @@ Los tipos no se mezclan en un prompt: cada uno es una pieza distinta.
 
 ## Entrega proporcionada
 - **Petición suelta:** el prompt en su bloque y los ajustes en una línea.
-- **Proyecto:** lo anterior, con el plano al que va, y el estado `prompt escrito`, nunca «audio generado».
+- **Proyecto:** **Guarda el prompt en `prompts.md` antes de responder** (REGLAS §9) y di en qué entrada queda; si no está escrito ahí, no está entregado. lo anterior, con el plano al que va, y el estado `prompt escrito`, nunca «audio generado».
 - **Iteraciones:** el prompt completo revisado; cambia una cosa por intento y anota qué se cambió.
 - **Cierre:** línea aparte con el siguiente paso y la frase exacta para pegar.
 

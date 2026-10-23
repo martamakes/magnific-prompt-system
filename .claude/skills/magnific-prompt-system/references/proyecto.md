@@ -1,6 +1,6 @@
 # PROYECTO (plantilla del dossier)
 
-Un único archivo por defecto. **Secciones largas en archivo aparte:** si `# GUION` o `# DESGLOSE TÉCNICO` crecen y el dossier deja de caber cómodo, pueden vivir en su propio archivo (`guion.md`, `desglose.md`, junto al dossier). El dossier conserva el encabezado de la sección con una línea de puntero (archivo, versión, estado y origen) y una fila en `# ESTADO`; el contenido vive solo en el archivo aparte, nunca duplicado. Las skills lo leen y lo escriben ahí. Es una opción, no una obligación: nada se mueve sin que lo pida el usuario. No rellenes todo por obligación para un prompt suelto, y no registres como aprobado lo que solo está propuesto. Cada decisión importante lleva su origen (`pedida` · `propuesta` · `aprobada` · `de referencia` · `documentada`).
+Un único archivo por defecto. **Secciones largas en archivo aparte:** si `# GUION` o `# DESGLOSE TÉCNICO` crecen y el dossier deja de caber cómodo, pueden vivir en su propio archivo (`guion.md`, `desglose.md`, junto al dossier). El dossier conserva el encabezado de la sección con una línea de puntero (archivo, versión, estado y origen) y una fila en `# ESTADO`; el contenido vive solo en el archivo aparte, nunca duplicado. Las skills lo leen y lo escriben ahí. **`prompts.md`** (junto al dossier) guarda los prompts entregados; ver el final de este archivo. Es una opción, no una obligación: nada se mueve sin que lo pida el usuario. No rellenes todo por obligación para un prompt suelto, y no registres como aprobado lo que solo está propuesto. Cada decisión importante lleva su origen (`pedida` · `propuesta` · `aprobada` · `de referencia` · `documentada`).
 
 ---
 
@@ -77,3 +77,27 @@ Un bloque por plano:
 - Decisión modificada:
 - Recursos y planos afectados:
 - Revisión necesaria:
+
+---
+
+## prompts.md (registro de prompts)
+Archivo aparte, junto al dossier. Es lo que el usuario abre para pegar en la app. Lo escribe la skill que entrega el prompt (REGLAS §9); el dossier solo lleva el estado en `# ESTADO`.
+
+Arriba, una tabla con **lo vigente** (un prompt por fila):
+
+| Entregable | Versión | Estado | Herramienta |
+|---|---|---|---|
+| (REF-01 hoja A) | v2 | prompt escrito | (imagen) |
+
+Estados: `prompt escrito` · `imagen generada` · `aprobada` · `descartado` · `sustituido`. Debajo, una entrada por prompt, la vigente primero y las anteriores al final:
+
+```
+## REF-01 hoja A · v2 — prompt escrito
+- Sustituye a: v1 (motivo)
+- Herramienta y ajustes: (operación, modelo de la tarea, relación de aspecto…)
+- Referencias, en orden: 1. archivo — qué aporta · 2. …
+- Prompt (para pegar):
+  (bloque de código, en inglés)
+- Resultado: (archivo o nombre en la app; vacío hasta que exista)
+- Notas: (qué falló o qué se aprobó)
+```

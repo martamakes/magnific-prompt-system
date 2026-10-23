@@ -31,7 +31,7 @@ En este orden, solo lo que el resultado muestra:
 
 ## Formato y entrega
 - **Petición suelta:** diagnóstico en pocas líneas (qué falla · causa probable `propuesta`) y el prompt corregido en un único bloque de código, en inglés (REGLAS §9). Junto a él, lo que se protege y qué mirar en el siguiente resultado (REVISAR DESPUÉS).
-- **Proyecto:** lo anterior y el registro del intento: qué se cambió, por qué y qué resultó. Estado `prompt escrito`, nunca «arreglado» hasta que el usuario confirme el resultado.
+- **Proyecto:** **Guarda el prompt en `prompts.md` antes de responder** (REGLAS §9) y di en qué entrada queda; si no está escrito ahí, no está entregado. lo anterior y el registro del intento: qué se cambió, por qué y qué resultó. Estado `prompt escrito`, nunca «arreglado» hasta que el usuario confirme el resultado.
 - **Cierre:** línea aparte con el estado y el siguiente paso con la frase exacta para pegar.
 
 ## Se detiene y pregunta si

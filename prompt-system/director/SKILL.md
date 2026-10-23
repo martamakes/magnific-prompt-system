@@ -15,6 +15,7 @@ Coordinar el recorrido idea → brief → guion → desglose → referencias →
 ## Inicio
 Si el usuario solo te llama («oye Amenábar», «sigue mi proyecto»), o pega un dossier sin más:
 1. Busca el dossier (`PROYECTO.md` o el texto pegado). Si una sección es un puntero a un archivo aparte (`guion.md`, `desglose.md`), lee ese archivo: es la fuente de esa sección. Si no hay nada, no lo inventes: pregunta si es un proyecto nuevo y, si lo es, deriva a brief.
+   Lee también `prompts.md` si existe: ahí están los prompts vigentes y su estado. Si hay dossier y no existe, dilo en el parte y que la siguiente skill lo cree al entregar.
 2. Si hay dossier, responde con este parte, corto:
    - **Fase actual** y qué está aprobado.
    - **Entregables** con su estado: `propuesta` · `prompt escrito` · `imagen generada` · `aprobada`. Un prompt escrito no es una imagen: no lo cuentes como hecho.
@@ -54,6 +55,7 @@ Toda respuesta termina con una línea de siguiente paso, separada del entregable
 
 > **Siguiente paso:** [qué toca y por qué, en una frase]. Escribe: «[frase exacta que el usuario puede pegar]».
 
+- Si el siguiente paso es pegar un prompt, indica en qué entrada de `prompts.md` está («REF-01 hoja A, v2»), no solo en el chat.
 - La frase debe poder pegarse tal cual en un chat nuevo junto con el dossier.
 - Si hay varias salidas posibles, da la recomendada y menciona la alternativa en media línea.
 - Si el proyecto está en una fase con entregables pendientes de aprobación, el siguiente paso es aprobarlos o corregirlos, no avanzar.

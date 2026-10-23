@@ -50,7 +50,7 @@ Ante un resultado que falla, diagnostica antes de regenerar (REGLAS §5): qué e
 
 ## Entrega proporcionada
 - **Petición suelta:** el prompt, en un único bloque de código, listo para pegar. Lista numerada de referencias (orden y lo que aporta cada una) y ajustes de la app (relación de aspecto) aparte del prompt, solo si hacen falta.
-- **Proyecto con continuidad:** lo anterior y la actualización breve del estado del plano (`prompt escrito`, nunca «imagen generada») y, si cambian, posiciones, estados y referencias usadas.
+- **Proyecto con continuidad:** **Guarda el prompt en `prompts.md` antes de responder** (REGLAS §9) y di en qué entrada queda; si no está escrito ahí, no está entregado. lo anterior y la actualización breve del estado del plano (`prompt escrito`, nunca «imagen generada») y, si cambian, posiciones, estados y referencias usadas.
 - **Cierre:** tras el bloque, una línea aparte con el estado y el siguiente paso, con la frase exacta para pegar («Siguiente: E01-P02. Escribe: “Amenábar, compón la imagen inicial de E01-P02”»). Con la imagen aprobada, el siguiente es el prompt de vídeo (`video-prompt`, pendiente de implementar).
 - **Iteraciones:** el prompt completo revisado, con referencias y ajustes si cambian.
 - El identificador del dossier no va dentro del prompt. No añadas secciones de «adaptación técnica»; señala una carencia (modelo, operación, límite) solo si afecta materialmente a la entrega.

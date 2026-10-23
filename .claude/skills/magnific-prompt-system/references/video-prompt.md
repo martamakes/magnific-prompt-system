@@ -94,7 +94,7 @@ Modo editar: BASE (versión, con id) · CAMBIO · PROTEGER · REVISAR DESPUÉS.
 
 ## Entrega proporcionada
 - **Petición suelta:** el prompt, en un único bloque de código, listo para pegar. Referencias (lista numerada, papel de cada una) y ajustes de la app (duración, relación de aspecto) aparte del prompt, solo si hacen falta.
-- **Proyecto con continuidad:** lo anterior y la actualización breve del estado (`prompt escrito`, nunca «clip generado»), con los tramos y el estado final de cada uno.
+- **Proyecto con continuidad:** **Guarda el prompt en `prompts.md` antes de responder** (REGLAS §9) y di en qué entrada queda; si no está escrito ahí, no está entregado. lo anterior y la actualización breve del estado (`prompt escrito`, nunca «clip generado»), con los tramos y el estado final de cada uno.
 - **Cierre:** línea aparte con el estado y el siguiente paso con la frase exacta para pegar («Siguiente: E01-P02. Escribe: “Amenábar, prompt de vídeo de E01-P02”»). Con todos los clips generados, el siguiente es el plan de montaje (`edit-plan`) o la revisión.
 - **Iteraciones:** el prompt completo revisado, con referencias y ajustes si cambian.
 - El identificador del dossier no va dentro del prompt. Si el perfil confirmado usa etiquetas de referencia, consérvalas. No añadas secciones de «adaptación técnica»; señala una carencia solo si afecta materialmente.

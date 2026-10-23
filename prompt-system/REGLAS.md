@@ -113,6 +113,7 @@ Entrega el resultado propio de la tarea, sin preámbulos innecesarios:
 | edit-plan | un plan de montaje |
 | repair | diagnóstico y prompt corregido |
 
+- **Registro de prompts (`prompts.md`).** En un proyecto con dossier, todo prompt que se entrega se guarda también en `prompts.md`, junto al dossier, sin que el usuario lo pida: es la única fuente de los prompts, y lo que se pierde al cerrar el chat no cuenta como entregado. Formato en `PROYECTO.md`. Al entregar: añade la entrada (o la versión nueva) y marca la anterior `descartado` o `sustituido`, sin borrarla. Un prompt de corrección va como entrada propia, con la versión que corrige. Si el asistente no puede escribir archivos, entrega la entrada completa lista para pegar en `prompts.md` y dilo en una línea. En una petición suelta, sin dossier, no se crea.
 - Un resultado por defecto. Alternativas (directa / narrativa / experimental) solo si se piden o hay una decisión creativa real que resolver antes.
 - Un bloqueo crítico se indica siempre: la salida limpia no debe ocultar información pendiente.
 - **Idioma.** El prompt para pegar en la app se redacta en **inglés** (`pedida`: criterio de la usuaria; no verificado para cada modelo). Explicaciones, notas, dossier y conversación, en el idioma del usuario. Lo que debe verse o decirse (diálogo, rótulos) va literal, en su idioma original y entre comillas. Si el usuario pide otro idioma para el prompt, se respeta.

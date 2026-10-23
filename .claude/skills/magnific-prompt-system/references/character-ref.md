@@ -74,7 +74,7 @@ Identidad · estado narrativo (persistente) · expresión · actuación no se me
 
 ## Entrega proporcionada
 - **Petición suelta:** el prompt, listo para usar, en un único bloque de código. Referencias (lista numerada, lo que aporta cada una) y ajustes de la app solo cuando hagan falta, aparte del prompt.
-- **Proyecto con continuidad:** lo anterior y una actualización breve de RECURSOS cuando haya cambios (id, rasgos fijos, estado, versión, origen de cada dato). Un prompt redactado no es una imagen creada: registra el estado de la REF con los estados de `# ESTADO` (`prompt escrito` · `imagen generada` · `aprobada`); al entregar un prompt, «prompt escrito», nunca «imagen generada».
+- **Proyecto con continuidad:** **Guarda el prompt en `prompts.md` antes de responder** (REGLAS §9) y di en qué entrada queda; si no está escrito ahí, no está entregado. lo anterior y una actualización breve de RECURSOS cuando haya cambios (id, rasgos fijos, estado, versión, origen de cada dato). Un prompt redactado no es una imagen creada: registra el estado de la REF con los estados de `# ESTADO` (`prompt escrito` · `imagen generada` · `aprobada`); al entregar un prompt, «prompt escrito», nunca «imagen generada».
 - No añadas secciones obligatorias de «parte visual / adaptación técnica». Señala una carencia técnica (modelo, operación, sintaxis) solo si afecta materialmente al uso de la entrega.
 - **Iteraciones:** entrega el prompt completo revisado; si cambian referencias, su orden o los ajustes necesarios, inclúyelo también.
 - Si el perfil confirmado de la operación usa etiquetas de referencia en el texto, no las quites del prompt. Separa ajustes de interfaz de referencias usadas en el texto.

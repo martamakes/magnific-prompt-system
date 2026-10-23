@@ -23,7 +23,7 @@ Una skill coordinadora (el director, que se activa con la palabra **Amenábar**)
 | Resultado que falla | `repair` |
 | Orden, uniones y sonido en montaje | `edit-plan` |
 
-Documentos comunes: `REGLAS.md` (reglas de todas las skills), `PROYECTO.md` (plantilla del dossier), `MODELOS.md` y `PLATAFORMAS.md` (límites por modelo y zonas seguras por destino), `EX00_KISS.md` (ejercicio inicial) y `FLUJO-idea-a-desglose.md` (guía de uso paso a paso).
+Documentos comunes: `REGLAS.md` (reglas de todas las skills), `PROYECTO.md` (plantilla del dossier), `MODELOS.md` y `PLATAFORMAS.md` (límites por modelo y zonas seguras por destino), `EX00_KISS.md` (ejercicio inicial) y `FLUJO-idea-a-storyboard.md` (guía de uso paso a paso).
 
 ## Instalación
 
@@ -82,7 +82,7 @@ El zip de `dist/` no se ha probado como subida a ninguna interfaz web (pendiente
 4. Cada respuesta termina con un **Siguiente paso** y la frase exacta para pegar. El director no ejecuta nada por su cuenta: espera tu orden.
 5. Aprueba o corrige en cualquier fase: `Aprobado.` o `Cambia X por Y.`
 
-La guía completa, fase por fase, está en `prompt-system/FLUJO-idea-a-desglose.md`.
+La guía completa, fase por fase, está en `prompt-system/FLUJO-idea-a-storyboard.md`.
 
 ## Principios
 

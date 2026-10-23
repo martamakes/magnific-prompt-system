@@ -71,7 +71,7 @@ for style in sorted((SRC / "estilos").glob("*.md")):
         fix_paths(style.read_text(encoding="utf-8")), encoding="utf-8"
     )
 (REFS / "guia-usuario.md").write_text(
-    fix_paths((SRC / "FLUJO-idea-a-desglose.md").read_text(encoding="utf-8")), encoding="utf-8"
+    fix_paths((SRC / "FLUJO-idea-a-storyboard.md").read_text(encoding="utf-8")), encoding="utf-8"
 )
 
 # SKILL.md raíz = director, con rutas a references/.

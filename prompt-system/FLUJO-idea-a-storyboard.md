@@ -1,10 +1,10 @@
-# Guía de uso: de la idea al plan de montaje
+# Guía de uso: de la idea al storyboard
 
 Guía para quien usa el sistema; no la leen las skills. Se trabaja con la palabra **Amenábar**: él lee tu proyecto, te dice en qué fase estás y cuál es el siguiente paso, con la frase exacta que tienes que escribir.
 
 **Si empiezas, haz primero `EX00_KISS.md`:** un ejercicio con 1 personaje, 1 localización, 1 objeto, sin diálogo ni lip sync.
 
-Alcance: brief → guion → desglose → plan de referencias → referencias (personajes, localizaciones, objetos, hoja de vestuario opcional) → composición → prompts de vídeo → revisión de resultados (`repair`) → plan de montaje (`edit-plan`). También hay prompts de audio. El sistema solo redacta: tú pegas los prompts en Magnific (y en la herramienta de audio que uses). **Audio:** tú eliges al empezar: sin audio, audio externo (lo pones tú fuera de Magnific) o audio en Magnific. **Texto en imagen o vídeo:** no se pide en los prompts; títulos y rótulos se añaden después en el editor de vídeo.
+**Meta de esta guía:** un **storyboard**, es decir la imagen inicial aprobada de cada plano del desglose. Se llega con: brief → guion → desglose → plan de referencias → referencias (personajes, localizaciones, objetos, hoja de vestuario opcional) → composición de cada plano. El vídeo, la revisión de resultados (`repair`), el plan de montaje (`edit-plan`) y el audio vienen después y están al final como «Más allá del storyboard». El sistema solo redacta: tú pegas los prompts en Magnific (y en la herramienta de audio que uses). **Audio:** tú eliges al empezar: sin audio, audio externo (lo pones tú fuera de Magnific) o audio en Magnific. **Texto en imagen o vídeo:** no se pide en los prompts; títulos y rótulos se añaden después en el editor de vídeo.
 
 ---
 
@@ -39,9 +39,11 @@ Copia esa frase tal cual. No ejecuta nada por su cuenta: espera tu orden.
 4. **Plan de referencias.** Tras aprobar el desglose te da la lista `REF-01, REF-02…`: qué imágenes hay que crear y en qué orden. Las vistas salen de los planos.
 5. **Referencias.** Una REF cada vez. Para cada una recibes un prompt; lo generas en Magnific y vuelves a decir si queda aprobada.
 
-6. **Composición y vídeo.** Imágenes de cada plano a partir de las referencias aprobadas; después el prompt de vídeo. Un vídeo necesita su imagen inicial aprobada. Los límites (duración, referencias) salen de `MODELOS.md`; cualquier valor «pendiente de verificar» se te dice, no se supone.
-7. **Revisión.** Si un resultado falla, dile a qué segundo y qué elemento (o, en una imagen, qué elemento y dónde): se diagnostica antes de regenerar.
-8. **Montaje.** Orden, uniones, sonido y texto en pantalla, como plan escrito para tu editor.
+6. **Storyboard (composición).** Una imagen inicial por plano (`shot-composer`), a partir de las referencias aprobadas, en el orden del desglose. Los planos de una misma unidad de generación no repiten imagen, y un plano de texto a vídeo sin imagen inicial se te dice. Cada imagen pasa por `propuesta` → `prompt escrito` → `imagen generada` → `aprobada`. Si una imagen falla, dile qué elemento y dónde (`repair`): se diagnostica antes de regenerar. **El storyboard está listo cuando todos los planos tienen su imagen aprobada**; entonces puedes verlos en orden y ajustar el desglose antes de gastar en vídeo.
+
+## Más allá del storyboard
+
+Cuando el storyboard esté aprobado: **prompt de vídeo** de cada plano (necesita su imagen inicial aprobada; los límites de duración y referencias salen de `MODELOS.md` y cualquier valor «pendiente de verificar» se te dice, no se supone), **revisión** de resultados de vídeo (dile a qué segundo y qué elemento), **montaje** (`edit-plan`: orden, uniones, sonido y texto en pantalla, como plan escrito para tu editor) y **audio**.
 
 Para aprobar o corregir, en cualquier fase:
 

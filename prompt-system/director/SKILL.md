@@ -38,6 +38,7 @@ Si el usuario solo te llama («oye Amenábar», «sigue mi proyecto»), o pega u
 | Imagen inicial de un plano | shot-composer |
 | Prompt de vídeo | video-prompt |
 | Prompt de música, efectos, voz o ambiente | audio-prompt |
+| «Previsualiza el plano», comprobar geografía o cámara antes de generar | scene-previz |
 | «Revisa con estilo [nombre]», desglose estático (después del desglose, antes del plan de referencias) | review |
 | «Comprueba coherencia», «¿está todo alineado?» (también al cerrar una fase) | coherencia |
 | Resultado que falló | repair |

@@ -38,6 +38,7 @@ Si el usuario solo te llama («oye Amenábar», «sigue mi proyecto»), o pega u
 | Imagen inicial de un plano | `references/shot-composer.md` |
 | Prompt de vídeo | `references/video-prompt.md` |
 | Prompt de música, efectos, voz o ambiente | `references/audio-prompt.md` |
+| «Previsualiza el plano», comprobar geografía o cámara antes de generar | `references/scene-previz.md` |
 | «Revisa con estilo [nombre]», desglose estático (después del desglose, antes del plan de referencias) | `references/review.md` |
 | «Comprueba coherencia», «¿está todo alineado?» (también al cerrar una fase) | `references/coherencia.md` |
 | Resultado que falló | `references/repair.md` |

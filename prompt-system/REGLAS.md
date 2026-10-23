@@ -109,6 +109,7 @@ Entrega el resultado propio de la tarea, sin preámbulos innecesarios:
 | script | un guion |
 | breakdown | el desglose |
 | skills de prompting (incl. audio-prompt) | el prompt |
+| scene-previz | la especificación de una previsualización |
 | edit-plan | un plan de montaje |
 | repair | diagnóstico y prompt corregido |
 

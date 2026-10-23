@@ -24,7 +24,7 @@ Por cada plano:
 - acción;
 - disposición espacial y eje de acción, cuando haya interacción espacial relevante (ver más abajo);
 - encuadre y punto de vista;
-- cámara fija o movimiento previsto;
+- cámara fija o movimiento previsto, con **qué aporta** el movimiento (si no se sabe, fija; criterio en `video-prompt`, «Cámara»);
 - duración orientativa;
 - sonido, anotado por tipo (diálogo / voz en off · efectos de acción · ambiente · música; «—» en los que no apliquen) (según `Audio:` de PROYECTO: con `sin audio`, «—»; con `audio externo`, anotado para montaje y marcado «externo», sin entrar en prompts; con `audio en Magnific`, anotado y marcado «Magnific» para el prompt de vídeo; la duración del plano no se ajusta a diálogo);
 - recursos y estados presentes (incluidos los que quedan fuera de cuadro);

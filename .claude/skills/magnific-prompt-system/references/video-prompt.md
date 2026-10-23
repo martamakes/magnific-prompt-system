@@ -41,6 +41,27 @@ No hay fórmula obligatoria. Incluye, en este orden salvo que convenga otro:
 
 Lo que no se menciona lo decide el modelo, también la cámara: si el desglose fija cámara, dila.
 
+## Cámara
+*Criterio de trabajo mío, sin verificar con el modelo ni con generaciones reales; la única fuente de cámara por modelo es `references/modelos.md`.*
+- **Fija por defecto.** La cámara se mueve solo si el movimiento aporta algo que el plano quieto no da. Si no puedes decir qué aporta, queda fija. Un movimiento por plano.
+- **Según la función del plano:**
+
+| Lo que el plano necesita | Movimiento a considerar |
+|---|---|
+| Llevar la atención a un detalle o dar peso a un momento | acercamiento lento |
+| Revelar contexto o dar escala | alejamiento o panorámica |
+| Acompañar a un sujeto que se desplaza | seguimiento (al lado, delante o detrás) |
+| Mostrar volumen o espacio de un sujeto u objeto | órbita |
+| Urgencia, tensión o aire documental | cámara en mano |
+| Calma o contemplación | fija, o desplazamiento muy lento |
+| Pasar la atención de un sujeto a otro sin cortar | panorámica |
+
+- **Cómo se redacta:** tipo de movimiento, dirección respecto al sujeto, velocidad (lenta, constante, que se acelera), encuadre al inicio y al final, y qué queda a la vista al terminar. Sin interpretaciones («con tensión»): observable.
+- **Imagen inicial:** el encuadre de partida lo fija la imagen y el movimiento arranca de ella. Un movimiento que muestra algo que la imagen no contiene (alejarse, girar) obliga al modelo a **inventarlo**: si eso importa (personaje, objeto, lugar), necesita referencia aprobada o se cambia el movimiento; si no importa, dilo.
+- **Duración:** el movimiento ocupa la duración del plano. Un recorrido grande en un plano corto sale brusco: acorta el recorrido o alarga el plano.
+- **Eje y tramos:** respeta el eje de acción del desglose. En un plano partido en tramos, la posición final de cámara de uno es la inicial del siguiente.
+- **Modelo:** si el perfil de `references/modelos.md` lista movimientos predefinidos, se elige uno de esa lista y no se inventa un nombre. Cómo se combina con el texto del prompt y cuánto lo respeta cada modelo: *pendiente de verificar*; se anota tras la primera prueba real.
+
 ## Criterios de redacción
 *Recomendaciones de repos comunitarios, no verificadas en Magnific (REGLAS §3); trátalas como criterio de partida y anota cualquier comprobación real. Donde el handbook de Magnific (v1.2) coincide, se indica.*
 - **Una acción principal y un movimiento de cámara principal por plano** (coincide con el handbook de Magnific). Si el desglose pide más, es un problema de carga de acción (`breakdown` §C): propón dividir en planos o tramos, no lo apiles en un prompt.
@@ -92,6 +113,7 @@ No genera, no elige modelo, no crea imagen ni recursos (`shot-composer`, `*-ref`
 - imagen inicial y referencias requeridas aprobadas;
 - el prompt de imagen a vídeo no redescribe ni contradice la imagen;
 - una acción y una cámara principal; la carga coincide con `breakdown` §C;
+- si la cámara se mueve, se dice qué aporta, el encuadre de inicio y de fin, y si lo que revela está en la imagen o en una referencia aprobada;
 - recorrido de lo que se mueve (desde dónde, hacia dónde), manos y estado final coherentes con el desglose y con el plano siguiente;
 - tramos con estado final y tiempos marcados como estimación;
 - sin negación de objetos visibles ni texto en pantalla no resuelto;

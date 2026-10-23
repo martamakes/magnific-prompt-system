@@ -13,7 +13,7 @@ Entender por qué un resultado no sirve y entregar el prompt corregido para pega
 ## Entradas
 - El prompt que se usó y las referencias adjuntas (qué papel tenía cada una).
 - El resultado: imágenes que el usuario adjunte, o su descripción de lo que ve. **No ves un vídeo**: trabaja con fotogramas que aporte o con lo que describa, y dilo. Lo que no se ha visto no se diagnostica como hecho.
-- **Dónde falla, en el feedback del usuario.** Para un vídeo, el segundo (o tramo) en que ocurre y el elemento concreto (qué personaje u objeto, qué parte: mano, rostro, taza, cámara). Con eso se diagnostica sobre un hecho; sin ello, «se ve raro» no basta. Si falta, se pide (ver más abajo). En una imagen, el elemento y su posición en el encuadre. Un fotograma del segundo indicado vale más que la descripción.
+- **Dónde falla, en el feedback del usuario.** Para un vídeo, el segundo (o tramo) en que ocurre y el elemento concreto (qué personaje u objeto, qué parte: mano, rostro, llave, cámara). Con eso se diagnostica sobre un hecho; sin ello, «se ve raro» no basta. Si falta, se pide (ver más abajo). En una imagen, el elemento y su posición en el encuadre. Un fotograma del segundo indicado vale más que la descripción.
 - Qué se esperaba: el plano del desglose y su estado inicial y final, si hay dossier.
 - Intentos anteriores y qué se cambió en cada uno.
 
@@ -41,7 +41,7 @@ En este orden, solo lo que el resultado muestra:
 
 ## Se detiene y pregunta si
 - falta el prompt usado o una descripción o imagen del resultado;
-- no dice en qué segundo (vídeo) o en qué elemento falla y eso cambia el diagnóstico: pide solo el dato que falta, con una frase corta para contestar («a los 3 s, la mano derecha de M1 atraviesa la taza»);
+- no dice en qué segundo (vídeo) o en qué elemento falla y eso cambia el diagnóstico: pide solo el dato que falta, con una frase corta para contestar («a los 3 s, la mano derecha de M1 atraviesa la llave»);
 - hay varios fallos y el usuario no dice cuál prioriza;
 - el arreglo exige cambiar el desglose o las referencias aprobadas y no está autorizado.
 Máximo 3 preguntas, agrupadas.

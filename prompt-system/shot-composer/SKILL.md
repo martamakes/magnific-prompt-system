@@ -21,7 +21,7 @@ Solo si la **vía de producción** del plano en el desglose usa imagen inicial. 
 - Sin desglose, acepta una descripción del plano del usuario; lo no dicho que cambie la imagen se pregunta o se marca `propuesta`.
 
 ## Qué fija la imagen
-- **Momento:** el estado inicial del plano (el «estado inicial» de la actuación), no el resultado de la acción. Debe dejar espacio visual para lo que el vídeo hará después (el personaje aún no ha cogido la taza; la mano no ha llegado).
+- **Momento:** el estado inicial del plano (el «estado inicial» de la actuación), no el resultado de la acción. Debe dejar espacio visual para lo que el vídeo hará después (el personaje aún no ha cogido la llave; la mano no ha llegado).
 - **Encuadre y punto de vista:** el del desglose, en términos observables (plano medio, cámara a la altura de los ojos, desde la izquierda del eje).
 - **Posiciones:** de cada personaje y objeto presente, anclada a lado o posición («a la derecha, de pie junto a la puerta»), también de lo que queda fuera de cuadro y condiciona el plano. Respeta la geografía y el eje del desglose; no la rediseñes.
 - **Miradas, manos y objetos:** hacia dónde mira cada personaje, qué mano sostiene qué, dónde está cada objeto.

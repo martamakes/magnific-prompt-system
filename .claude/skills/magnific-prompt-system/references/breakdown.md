@@ -29,7 +29,7 @@ Por cada plano:
 - unidad de generación: plano independiente, clip con varios planos o secuencia;
 - alternativa más sencilla, cuando sea necesaria.
 
-Cuando proceda (no en todos los planos), añade actuación: estado inicial → estímulo → reacción observable → estado final, y objetivo de la mirada. Un personaje puede mantener una expresión o actitud sin transición. Describe el gesto observable; no lo conviertas en una interpretación («mira la taza» no significa «la esperaba»).
+Cuando proceda (no en todos los planos), añade actuación: estado inicial → estímulo → reacción observable → estado final, y objetivo de la mirada. Un personaje puede mantener una expresión o actitud sin transición. Describe el gesto observable; no lo conviertas en una interpretación («mira la puerta» no significa «espera a alguien»).
 
 Las indicaciones son planificación creativa: no las presentes como capacidades garantizadas del modelo.
 

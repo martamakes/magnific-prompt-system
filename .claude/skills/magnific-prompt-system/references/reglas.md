@@ -86,7 +86,7 @@ Los nombres cortos de un caso concreto (`M1`, `P01`, `S1`) son abreviaturas loca
 Reglas:
 - No hay skill de emociones: el procedimiento se reparte entre script, breakdown, character-ref, shot-composer y video-prompt.
 - No fuerces una transición emocional en todos los planos; un personaje puede mantener una expresión o actitud.
-- Distingue el gesto observable de sus interpretaciones posibles («mira la taza» no significa «la esperaba»); deja abierta la lectura que el encargo deja abierta.
+- Distingue el gesto observable de sus interpretaciones posibles («mira la puerta» no significa «espera a alguien»); deja abierta la lectura que el encargo deja abierta.
 - «Boca abierta» no equivale a felicidad, sorpresa, risa, grito ni habla: especifica cuál.
 - Separa expresión facial, acción corporal y acción vocal.
 - No añadas diálogo, risa ni gritos no previstos. Para diálogo, conserva el texto exacto aprobado y separa las indicaciones de interpretación.

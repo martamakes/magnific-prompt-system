@@ -29,7 +29,7 @@ Evalúa la claridad del gancho, la progresión y la lectura del mensaje. No pres
 | Transición | corte por forma, movimiento o composición · oclusión · barrido · transformación de materia |
 | Puesta en escena | sujeto quieto y mundo móvil · objetos gigantes · gravedad alterada · espacios que cambian |
 
-Ejemplo de descripción válida: «La cámara desciende desde un cenital, atraviesa el asa de una taza y aparece dentro, con la protagonista pequeña al fondo.» No válida: «cámara épica con movimiento imposible».
+Ejemplo de descripción válida: «La cámara desciende desde un cenital, atraviesa el hueco de una cerradura y aparece al otro lado, con la protagonista pequeña al fondo.» No válida: «cámara épica con movimiento imposible».
 
 ## Estado de las capacidades (fuente: texto pegado de una revisión externa; sin verificar por mí; modelo, fuente y fecha por confirmar)
 | Recurso | Evidencia | Registro |
@@ -41,7 +41,7 @@ Ejemplo de descripción válida: «La cámara desciende desde un cenital, atravi
 | Recorridos imposibles, cambios extremos de escala | los ejemplos no los acreditan | hipótesis de producción; no prometer una sola generación; prever solución por montaje |
 | Modelos 3D sin textura como guía de espacio y cámara (2.5) | documentado; disponibilidad en Magnific sin comprobar | `documentada`, pendiente |
 
-Se puede diseñar un ojo de pez o un retroceso que revele el asteroide; lo que no se escribe es «el modelo ejecutará esto manteniendo personaje, geometría y objetos exactos».
+Se puede diseñar un ojo de pez o un retroceso que revele el espacio completo; lo que no se escribe es «el modelo ejecutará esto manteniendo personaje, geometría y objetos exactos».
 
 ## Riesgos conocidos
 - El ojo de pez deforma rostros y manos: úsalo con la figura lejos o con función (humor, escala), y comprueba la identidad.

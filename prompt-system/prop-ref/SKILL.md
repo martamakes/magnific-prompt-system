@@ -42,7 +42,7 @@ Pregunta solo si el reparto es ambiguo **y** cambia el resultado (máx. 3 pregun
 ## Editar y versiones
 Modo editar: BASE (versión, con id) · CAMBIO · PROTEGER · REVISAR DESPUÉS.
 
-**Una petición explícita autoriza el cambio que describe.** «Mantén la taza igual pero con el asa rota» → crea una variante con ese cambio (`OB01-v2`), conserva la versión anterior y no preguntes si se autoriza exactamente eso. Pero la variante solo se escribe con la base `aprobada`: si no lo está, dilo y entrega el prompt de la base.
+**Una petición explícita autoriza el cambio que describe.** «Mantén la lámpara igual pero con la pantalla rota» → crea una variante con ese cambio (`OB01-v2`), conserva la versión anterior y no preguntes si se autoriza exactamente eso. Pero la variante solo se escribe con la base `aprobada`: si no lo está, dilo y entrega el prompt de la base.
 
 Distingue:
 - *Corrección del mismo recurso* (arreglar un fallo): sustituye la versión sin vida propia.

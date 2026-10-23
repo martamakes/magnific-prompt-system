@@ -56,6 +56,7 @@ Toda respuesta termina con una línea de siguiente paso, separada del entregable
 - La frase debe poder pegarse tal cual en un chat nuevo junto con el dossier.
 - Si hay varias salidas posibles, da la recomendada y menciona la alternativa en media línea.
 - Si el proyecto está en una fase con entregables pendientes de aprobación, el siguiente paso es aprobarlos o corregirlos, no avanzar.
+- Al cerrar una fase, o si guion, desglose y dossier han cambiado por separado, recomienda `coherencia` antes de avanzar, como alternativa en media línea; no la impongas.
 
 ## Aprobación entre fases
 - En un proyecto desarrollado por fases, pide la aprobación del guion antes de pasar al desglose técnico.

@@ -73,4 +73,5 @@ Si lo que te da Amenábar no lo entiendes o no encaja, escríbelo con tus palabr
 - **Una conversación nueva por fase**, con el dossier pegado (plantilla en `references/proyecto.md`). Así no se pierde el hilo.
 - **Dossier grande:** el guion y el desglose pueden vivir en su propio archivo (`guion.md`, `desglose.md`); el dossier conserva un puntero con versión y estado. Si trabajas en una conversación nueva, pega también ese archivo.
 - **Lo propuesto no es aprobado** hasta que lo digas.
+- **Comprobar coherencia:** al cerrar una fase, o cuando guion, desglose y dossier hayan cambiado por separado, di `Amenábar, comprueba coherencia`. Solo lee y te lista los conflictos con archivo y línea; no corrige nada hasta que elijas.
 - Si en algún momento no sabes qué hacer: «Oye Amenábar, ¿en qué fase estoy?».

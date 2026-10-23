@@ -15,6 +15,9 @@ Anuncios, promoción y contenido de marca para Reels, TikTok o Meta Ads, cuando 
 - ¿Los rótulos y acciones clave caen dentro de la zona segura (`PLATAFORMAS.md`)?
 - Con `Audio:` distinto de `sin audio`: ¿el sonido se diseña junto a la imagen y se indica qué depende del audio?
 
+## Criterio de evaluación
+Evalúa la claridad del gancho, la progresión y la lectura del mensaje. No presupongas que más movimiento, más cortes o más efectos mejoran la pieza. Conserva las pausas, los planos fijos y las revelaciones diferidas cuando cumplan una función. Distingue una mejora esperada de una mejora comprobada.
+
 ## Vocabulario (describe resultado visible, no etiquetas)
 | Familia | Recursos |
 |---|---|

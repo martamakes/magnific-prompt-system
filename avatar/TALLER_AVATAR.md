@@ -11,9 +11,11 @@ Parte del vídeo «El sistema que llevó mi avatar IA a 100K vistas» (Lorena Bo
 
 **Resultado:** un presentador (ficticio, o real con su permiso) con identidad estable que dice un guion corto a cámara, con una voz elegida, montado en un vídeo.
 
-**Diferencia clave [mío, a confirmar]:** HeyGen crea un *avatar persistente*: subes imágenes o un vídeo, y luego generas vídeos largos con solo escribir o subir el audio. Magnific no tiene, hasta donde consta en las skills, una herramienta equivalente de avatar persistente. Aquí el «avatar» es:
+**Diferencia clave [mío, a confirmar]:** HeyGen crea un *avatar persistente*: subes imágenes o un vídeo, y luego generas vídeos largos con solo escribir o subir el audio. Magnific no tiene una herramienta equivalente de avatar persistente (no aparece en el catálogo del MCP). Lo más parecido es `video_speak` **[MCP]**: imagen aprobada + audio → presentador hablando, sin pasar por un modelo de vídeo. Aquí el «avatar» es:
 
-> **una hoja de personaje aprobada** (identidad) + **una imagen inicial de habla** (estado antes de hablar) + **clips cortos con voz** (el modelo de vídeo con audio nativo, o la voz de la app aplicada a un clip) + **montaje**.
+> **una hoja de personaje aprobada** (identidad) + **una voz** (`audio_tts` o voz clonada) + **`video_speak`** (imagen + audio → habla a cámara), o bien clips con audio nativo / voz aplicada a un clip + **montaje**.
+
+**[MCP]** = dato del catálogo de herramientas del MCP de Magnific (`video_speak_models_list`, nombres de herramientas). Confirma que las herramientas existen y sus límites de duración; **no** confirma costes ni calidad en tu cuenta.
 
 Consecuencias:
 - Las piezas son **clips de segundos**, no un vídeo de 10 minutos de un tirón. Un monólogo largo se corta en tramos (parte 6).
@@ -151,7 +153,26 @@ Marca la que uses en el campo `Audio:`.
 | Riesgo y gasto | Alto (si falla, se repite todo el clip) | Medio (si falla la voz, se repite solo la voz) |
 | Cuándo | Para probar rápido una pieza corta | Cuando quieres elegir la voz y controlar el texto |
 
-**Recomendación del taller [mío]:** empieza por la **vía B**. Separa los problemas: primero el clip (rostro y gestos), luego la voz. Prueba la vía A en un clip corto para ver si tu modelo la hace bien, y anótalo.
+### Vía C. `video_speak`: imagen aprobada + audio → presentador **[MCP]**
+La más directa para un presentador que habla a cámara **con una voz exacta** (una de `audio_tts`, una clonada con `audio_voice_clone` o tu grabación). No hace falta generar antes un clip: la imagen de la variante 1 (boca cerrada) más el audio dan el vídeo. Si no necesitas una voz concreta, la propia herramienta recomienda `video_generate` con un modelo de audio nativo (vía A).
+
+| Modo (`mode`) | Fuente | Audio máx. | Notas |
+|---|---|---|---|
+| `omnihuman` | imagen | 30 s (15 s recomendado) | Admite `prompt`. Es el automático para imagen. Mejor para gestos y expresión |
+| `veed-fabric-1.0` | imagen | 300 s (15 s recomendado) | 720p o 480p. Sin `prompt` |
+| `veed-fabric-1.0-fast` | imagen | 300 s (15 s recomendado) | Igual, más rápido: úsalo para borradores |
+| `lipsync-2.0`, `latentsync` | vídeo | vídeo de 30 s como máximo | Sincroniza labios sobre un clip ya generado (vía B con otro motor) |
+| `veed-sync-2-v2v` | vídeo | 300 s | Igual, para clips largos |
+
+Flujo:
+1. `audio_tts` con la voz elegida (`audio_voices_list`) y la interpretación (`audio_tts_direction`). Un audio por tramo, **de 15 s o menos**.
+2. `video_speak` con `imageUrl` (variante aprobada), `audioUrl` (el `identifier` del paso 1) y, en `omnihuman`, un `prompt` solo de gestos y cámara.
+3. Borrador primero (`veed-fabric-1.0-fast`, 480p), luego el modo elegido en alta.
+4. Misma comprobación que en 5.3: labios, palabras exactas, boca cerrada en las pausas.
+
+Ventajas: un solo paso para imagen+voz, tramos de hasta 15 s sin cortes y la voz no depende del modelo de vídeo. Límite: la cámara y el encuadre vienen de la imagen; los gestos son los que el modo decida.
+
+**Recomendación del taller [mío]:** empieza por la **vía C** si tienes voz definida; usa la **vía B** si necesitas controlar los gestos del clip. Prueba la vía A en un clip corto para ver si tu modelo la hace bien, y anótalo.
 
 **Mira el coste antes de ejecutar.** Pasos de calidad: **borrador/480p, 2 generaciones, elegir una y pasarla a alta** (regla de `EX02_ANIMACION.md`).
 
@@ -329,7 +350,8 @@ No es parte de la creación del presentador.
 
 ## 13. Pendiente de verificar antes de dar la clase
 
-- [ ] **Herramienta de voz de Magnific:** nombre exacto en el menú, voces disponibles, si hay clonación o diseño de voz, subida de audio propio, y límites de duración.
+- [x] **Herramientas de voz [MCP]:** existen `audio_tts`, `audio_tts_direction`, `audio_voices_list`, `audio_voice_clone`, `audio_voice_change` y `audio_clean_speech`. Pendiente: nombres en el menú de la app, voces de tu cuenta y límites de duración de `audio_tts`.
+- [ ] **`video_speak` en tu cuenta:** coste por modo, calidad de `omnihuman` frente a `veed-fabric`, y si respeta el texto palabra por palabra (límites de duración ya verificados en el MCP, vía C).
 - [ ] **Voz sobre un clip:** el modo de extensión «auto», y si respeta el texto palabra por palabra.
 - [ ] **Audio nativo con diálogo** en tu modelo de vídeo (Seedance 2.5 y 2.0): calidad de labios, voz y respeto del texto.
 - [ ] **Variations (modo Character):** número de variantes, cómo mantiene la identidad.
@@ -337,6 +359,6 @@ No es parte de la creación del presentador.
 - [ ] **Subir a alta:** si reutiliza o regenera el clip.
 - [ ] **Duración máxima de un clip** con el modelo de la tarea (`MODELOS.md`).
 - [ ] **Marcas de agua** y condiciones de uso comercial de lo que se genera.
-- [ ] **Si Magnific ofrece un avatar persistente:** en tal caso, esta ruta se simplifica (revisa la documentación oficial o el MCP de Magnific).
+- [x] **Avatar persistente [MCP]:** no hay herramienta equivalente a HeyGen; `video_speak` (imagen + audio) es lo más cercano. Si Magnific lo añade, revisa el catálogo.
 - [ ] **HeyGen y ElevenLabs:** precios, planes y condiciones sobre avatares reales y voces clonadas (los del vídeo pueden haber cambiado).
 - [ ] **Normas de la plataforma** donde publiques sobre etiquetar contenido sintético.

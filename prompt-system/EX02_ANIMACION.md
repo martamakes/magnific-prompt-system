@@ -15,16 +15,19 @@ Parte de lo que ya tienes: el storyboard aprobado. No se compone ninguna imagen 
 | Sincronía labial (lip sync) | **ninguna** |
 | Audio | **sin audio** (o el que decidiste al empezar el proyecto) |
 | Texto en pantalla | **ninguno**: títulos y rótulos van en el editor |
-| Intentos por plano | **máximo 3**; tras el tercero se simplifica el plano o se resuelve en el montaje |
+| Calidad al probar | **borrador (draft) o 480p**; la alta solo para el clip elegido |
+| Borradores por plano | **2**, se elige el mejor; si ninguno sirve, `repair` y un tercero como máximo |
+| Pasos a alta | **1** por plano (el elegido) |
+| Intentos por plano | **máximo 3 borradores**; tras el tercero se simplifica el plano o se resuelve en el montaje |
 
 Más intentos, más de un movimiento de cámara o diálogo = ejercicio no válido.
 
 ## Qué haces
 
 1. **Puerta.** Comprueba que cada plano que vas a animar tiene su imagen inicial `aprobada`. Sin imagen aprobada no se pide vídeo de ese plano.
-2. **Mira el coste antes de ejecutar.** Anota en tu nota: modelo, duración elegida, resolución y créditos que muestra Magnific, y tu saldo. Si el coste es un dato que no ves, se dice «pendiente de verificar» y se decide tú.
+2. **Mira el coste antes de ejecutar.** Anota en tu nota: modelo, duración elegida, resolución (borrador/480p y alta) y créditos que muestra Magnific, y tu saldo. Si el coste es un dato que no ves, se dice «pendiente de verificar» y se decide tú.
 3. **Un primer plano de prueba.** Empieza por **uno solo**: `Amenábar, prompt de vídeo de E01-P01`. El prompt describe solo lo que **cambia** (acción y cámara); no redescribe lo que ya está en la imagen.
-4. **Genera, mira y decide.** Pega el prompt en Magnific con la imagen inicial. Mira el clip entero antes de aprobar. Si falla, dile a `repair` **a qué segundo y qué elemento** (rostro, manos, objeto, fondo, cámara). Se diagnostica antes de regenerar y se cambia **una sola cosa por intento**.
+4. **Genera 2 borradores, elige y sube a alta.** Pega el prompt en Magnific con la imagen inicial y genera **2 borradores** (draft/480p). Mira los dos clips enteros y elige el mejor. Solo ese pasa a alta. Mira el clip de alta entero antes de aprobar. Si falla, dile a `repair` **a qué segundo y qué elemento** (rostro, manos, objeto, fondo, cámara). Se diagnostica antes de regenerar y se cambia **una sola cosa por intento**.
 5. **Repetir o resolver en el montaje.** Para cada defecto decide, y anótalo:
    - *repetir* (cuesta créditos);
    - *cortar antes del fallo* o usar solo la parte buena;
@@ -40,14 +43,15 @@ Más intentos, más de un movimiento de cámara o diálogo = ejercicio no válid
 - Por plano, una línea: movimiento de cámara elegido y qué aporta (si no lo sabes, cámara fija).
 - El **registro de intentos** de cada plano: qué prompt, qué falló (segundo y elemento), qué cambiaste y qué resultó.
 - La decisión de cada defecto: repetir, cortar, cubrir o simplificar.
-- **Tabla de créditos:** plano, intentos, créditos gastados, saldo al final.
+- **Tabla de créditos:** plano, borradores, pasos a alta, créditos gastados, saldo al final.
 - Una nota breve de lo que salió distinto de lo pedido (sirve para mejorar las skills; no puntúa).
 
 ## Valores del ejercicio (`propuesta`, sin aprobar)
 
 Hasta que los apruebes o cambies, no cuentan como decididos:
 - **Duración por clip:** corta, dentro del mínimo y máximo del modelo que uses (`MODELOS.md`; si ese dato está pendiente de verificar, se dice y se elige tú).
-- **Resolución:** la más baja que sirva para revisar el movimiento; la definitiva, solo en los clips aprobados (si el modelo lo permite).
+- **Resolución:** borrador o 480p para probar (2 por plano); alta solo para el borrador elegido. Qué modos de baja calidad ofrece cada modelo: pendiente de verificar en `MODELOS.md`.
+- **Pasar a alta:** si la app reutiliza el borrador o genera un clip nuevo (y puede salir distinto) está **pendiente de verificar**. Tras subir a alta, se vuelve a mirar el clip entero.
 - **Relación de aspecto:** la de la imagen inicial / destino del proyecto.
 - **Criterio de aprobación de cada clip:** hace la acción pedida; el personaje, el lugar y el objeto siguen siendo los de las referencias; la cámara hace lo que dijiste (o queda fija); nadie habla; no hay deformaciones visibles en rostro y manos durante todo el clip.
 
@@ -94,7 +98,8 @@ Si tras 3 intentos sigue fallando, se decide por escrito: cortar antes del fallo
 - [ ] Un movimiento de cámara por plano (o fija), con su motivo en una frase.
 - [ ] Una acción principal por plano.
 - [ ] Ningún diálogo, boca hablando ni texto en pantalla en ningún prompt.
-- [ ] No más de 3 intentos por plano y un solo cambio entre intentos.
+- [ ] Se probó con 2 borradores por plano y solo el elegido pasó a alta.
+- [ ] No más de 3 borradores por plano y un solo cambio entre intentos.
 - [ ] Cada fallo indica segundo y elemento, y cada decisión (repetir, cortar, cubrir, simplificar) está justificada.
 - [ ] La tabla de créditos está completa y el coste se miró antes de cada ejecución.
 - [ ] Los tags de corte o efecto de Eye Candy no se pusieron dentro de un plano con otro movimiento.

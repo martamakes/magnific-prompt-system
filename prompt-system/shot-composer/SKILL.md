@@ -13,6 +13,13 @@ Entregar el prompt de la imagen que fija cómo empieza un plano: quién está, d
 ## Cuándo hace falta
 Solo si la **vía de producción** del plano en el desglose usa imagen inicial. Si el plano va de texto a vídeo o directamente con referencias, no se compone imagen: dilo y no la pidas. Un plano de la misma unidad de generación que otro ya compuesto no repite imagen.
 
+**No hace falta una imagen o recorte distinto por plano.** Lo que importa es que el modelo no invente contexto visual:
+- mismo entorno y personaje, solo cambia el encuadre → misma referencia más la indicación del plano (encuadre, acción, qué se mantiene: ropa, luz, posición de objetos); sin referencia ni recorte nuevos (la viñeta del plano sí se genera a partir de esa referencia);
+- composición muy concreta que fijar → recorte o referencia específica;
+- ángulo, objeto o espacio que ninguna referencia muestra (contraplano, espalda, zona fuera de imagen) → nueva referencia que lo aporte; si falta, se señala como bloqueo y no se deja a la invención del modelo.
+
+Las referencias se fijan y aprueban antes de la primera viñeta (vestuario y color incluidos: el texto del prompt no los sostiene). La continuidad espacial exacta entre viñetas no la garantizan las referencias: la posición de personajes y objetos entre planos se revisa a mano.
+
 ## Entradas
 - El plano del desglose (`E01-P01`): encuadre, punto de vista, disposición espacial, recursos y estados, continuidad de entrada, relación de aspecto de `# PROYECTO`.
 - Las referencias que lo justifican (`REF-xx`), `aprobada` en el dossier o aportadas por el usuario como equivalentes (REGLAS §1).

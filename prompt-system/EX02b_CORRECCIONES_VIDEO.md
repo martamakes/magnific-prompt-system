@@ -42,6 +42,10 @@ Más de un cambio por intento o más de 3 regeneraciones = ejercicio no válido.
 - Tabla de créditos: intentos y gastados.
 - La decisión final: aprobado, cortado, cubierto o simplificado.
 
+## Repetir un clip con «Recreate»
+
+Al abrir un vídeo generado, **Use video → Recreate** vuelve al generador con el prompt, los ajustes y las referencias originales ya cargados (dato del tutorial «Prompting for video» de Magnific; sin comprobar con tu cuenta). Sirve para generar otra versión cambiando **una sola cosa** (`-v2`), o probar la misma idea con otro modelo. Antes de generar, comprueba que se restauraron las referencias y la calidad (borrador/480p).
+
 ## Tipos de fallo frecuentes
 
 Ayuda para localizar; no sustituye mirar el clip. Las causas son hipótesis.

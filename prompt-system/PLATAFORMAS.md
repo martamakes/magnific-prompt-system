@@ -66,6 +66,10 @@ No son destinos ni zonas seguras: herramientas de la app que pueden ayudar en un
 
 ---
 
+### Cambio de ángulo de cámara sobre una imagen (referencia)
+
+Un tutorial de terceros (Tao Prompts, «The ONLY 7 Prompts…») muestra una herramienta de edición de imagen que, a partir de una imagen de un personaje, genera otros ángulos de la misma escena (rotar, acercar, inclinar arriba o abajo) con controles. **No es de Magnific** y no se ha probado aquí: se anota solo como referencia. Las imágenes que da suelen salir suaves y piden un reescalado posterior. Para el flujo del curso, los ángulos nuevos se piden con el prompt de imagen del plano (`shot-composer`).
+
 ## Plantilla para un destino nuevo
 ```
 ### <Destino>

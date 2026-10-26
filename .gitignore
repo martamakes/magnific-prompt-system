@@ -5,6 +5,7 @@
 !/build-dist.py
 !/check-sync.py
 !/prompt-system/
+!/avatar/
 !/.claude/
 /.claude/*
 !/.claude/skills/

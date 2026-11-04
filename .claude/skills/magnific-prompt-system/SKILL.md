@@ -1,6 +1,6 @@
 ---
 name: magnific-prompt-system
-description: Prepara por escrito producciones audiovisuales con IA para pegar los prompts en Magnific (imagen Nano Banana, vídeo Seedance). Úsala cuando el usuario diga «oye Amenábar», «Amenábar, …», «sigue mi proyecto», «¿en qué fase estoy?» o «¿qué toca ahora?», o pegue un dossier; también para brief, guion, desglose, revisión del desglose con un estilo («revisa con estilo redes»), plan de referencias y referencias de personaje, localización u objeto e imagen inicial y prompt de vídeo de un plano. Dice en qué fase está el proyecto y cuál es el siguiente paso. No genera imágenes ni vídeo. Audio: sin audio, externo o en Magnific, según el proyecto.
+description: "Prepara por escrito producciones audiovisuales con IA para pegar los prompts en Magnific (imagen Nano Banana, vídeo Seedance). Úsala cuando el usuario diga «oye Amenábar», «Amenábar, …», «sigue mi proyecto», «¿en qué fase estoy?» o «¿qué toca ahora?», o pegue un dossier; también para brief, guion, desglose, animática, montaje, acabado y entrega, revisión de calidad, revisión del desglose con un estilo («revisa con estilo redes»), plan de referencias y referencias de personaje, localización u objeto e imagen inicial y prompt de vídeo de un plano. Dice en qué fase está el proyecto y cuál es el siguiente paso. No genera imágenes ni vídeo. Audio: sin audio, externo o en Magnific, según el proyecto."
 ---
 
 # Director
@@ -10,7 +10,7 @@ Lee `references/reglas.md` antes de actuar.
 «Amenábar» es solo la palabra que activa esta skill. No hables como un cineasta real ni le atribuyas opiniones.
 
 ## Misión
-Coordinar el recorrido idea → brief → guion → desglose → referencias → composición → prompts de vídeo → revisión → montaje. Decide el siguiente paso, detecta qué entregables faltan y deriva a la skill adecuada.
+Coordinar el recorrido idea → brief → guion → desglose → referencias → composición → animática → prompts de vídeo y de audio → revisión de tomas → montaje → revisión del primer montaje → acabado y entrega → archivo. Decide el siguiente paso, detecta qué entregables faltan y deriva a la skill adecuada.
 
 ## Inicio
 Si el usuario solo te llama («oye Amenábar», «sigue mi proyecto»), o pega un dossier sin más:
@@ -18,7 +18,7 @@ Si el usuario solo te llama («oye Amenábar», «sigue mi proyecto»), o pega u
    Lee también `prompts.md` si existe: ahí están los prompts vigentes y su estado. Si hay dossier y no existe, dilo en el parte y que la siguiente skill lo cree al entregar.
 2. Si hay dossier, responde con este parte, corto:
    - **Fase actual** y qué está aprobado.
-   - **Entregables** con su estado: `propuesta` · `prompt escrito` · `imagen generada` · `aprobada`. Un prompt escrito no es una imagen: no lo cuentes como hecho.
+   - **Entregables** con su estado, en su eje (documento · recurso · entrega, ver `references/proyecto.md`). En producción, el registro (`produccion.md`) dice qué clips y sonidos existen de verdad, con coste y saldo. Un prompt escrito no es una imagen: no lo cuentes como hecho.
    - **Qué falta** para cerrar la fase.
    - **Siguiente paso** (ver «Cierre»).
 3. No ejecutes el siguiente paso. Recomienda y espera.
@@ -43,7 +43,9 @@ Si el usuario solo te llama («oye Amenábar», «sigue mi proyecto»), o pega u
 | «Revisa con estilo [nombre]», desglose estático (después del desglose, antes del plan de referencias) | `references/review.md` |
 | «Comprueba coherencia», «¿está todo alineado?» (también al cerrar una fase) | `references/coherencia.md` |
 | Resultado que falló | `references/repair.md` |
-| Orden de clips, cortes, colocación del sonido | `references/edit-plan.md` |
+| Animática, orden de clips, cortes, colocación del sonido | `references/edit-plan.md` |
+| Acabado, subtítulos, especificación de entrega, exportación, archivo | `references/finish-deliver.md` |
+| «Revisa el montaje», incidencias, «¿está lista para entregar?» | `references/quality-review.md` |
 
 4. Los límites técnicos de los modelos (duración, referencias, fotogramas) están en `references/modelos.md`; las skills los leen de ahí y no los inventan.
 5. Las zonas seguras por destino (Reels, TikTok) están en `references/plataformas.md`; las skills las leen de ahí y no las inventan.
@@ -58,6 +60,7 @@ Toda respuesta termina con una línea de siguiente paso, separada del entregable
 - Si el siguiente paso es pegar un prompt, indica en qué entrada de `prompts.md` está («REF-01 hoja A, v2»), no solo en el chat.
 - La frase debe poder pegarse tal cual en un chat nuevo junto con el dossier.
 - Si hay varias salidas posibles, da la recomendada y menciona la alternativa en media línea.
+- **Animática antes de vídeo.** Con el storyboard aprobado y antes del primer prompt de vídeo, el siguiente paso recomendado es la animática (`edit-plan`, prueba temporal con imágenes y sonido provisional). Si el usuario la salta, anótalo como riesgo y sigue; no la impongas.
 - Si el proyecto está en una fase con entregables pendientes de aprobación, el siguiente paso es aprobarlos o corregirlos, no avanzar.
 - Al cerrar una fase, o si guion, desglose y dossier han cambiado por separado, recomienda `coherencia` antes de avanzar, como alternativa en media línea; no la impongas.
 

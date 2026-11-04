@@ -43,7 +43,7 @@ Copia esa frase tal cual. No ejecuta nada por su cuenta: espera tu orden.
 
 ## Más allá del storyboard
 
-Cuando el storyboard esté aprobado: **prompt de vídeo** de cada plano (necesita su imagen inicial aprobada; los límites de duración y referencias salen de `references/modelos.md` y cualquier valor «pendiente de verificar» se te dice, no se supone), **revisión** de resultados de vídeo (dile a qué segundo y qué elemento), **montaje** (`edit-plan`: orden, uniones, sonido y texto en pantalla, como plan escrito para tu editor) y **audio**.
+Cuando el storyboard esté aprobado: **animática** (`edit-plan`: las imágenes en secuencia, con sus tiempos y sonido provisional; la ves y la ajustas antes de gastar en vídeo), y después **prompt de vídeo** de cada plano (necesita su imagen inicial aprobada; los límites de duración y referencias salen de `references/modelos.md` y cualquier valor «pendiente de verificar» se te dice, no se supone), **revisión** de resultados de vídeo (dile a qué segundo y qué elemento), **montaje** (`edit-plan`: orden, uniones, sonido y texto en pantalla, como plan escrito para tu editor) y **audio**.
 
 Para aprobar o corregir, en cualquier fase:
 
@@ -53,7 +53,10 @@ Aprobado. [O: cambia X por Y.]
 
 ## Estados de cada entregable
 
-`propuesta` → `prompt escrito` → `imagen generada` → `aprobada`
+Hay tres ejes que no se mezclan (detalle en `references/proyecto.md`):
+- Documentos (guion, desglose, plan, animática): `propuesta` → `aprobada`.
+- Recursos (referencias, imágenes, clips, audio): `prompt escrito` → `generado` → `revisado` → `aprobada` o `descartado`.
+- Entrega (la pieza): `en montaje` → `en revisión` → `correcciones` → `exportado` → `verificado`.
 
 **Un prompt escrito no es una imagen.** Hasta que no generes la imagen y la apruebes, la referencia no cuenta como hecha. Una referencia de prioridad Alta sin aprobar bloquea la fase siguiente.
 

@@ -7,13 +7,19 @@ Un único archivo por defecto. **Secciones largas en archivo aparte:** si `# GUI
 ## # ESTADO
 Lo primero que lee el director. Una fila por entregable; se actualiza al cerrar cada paso.
 
-Estados: `propuesta` · `prompt escrito` · `imagen generada` · `aprobada`. Un prompt escrito no es una imagen: solo pasa a `imagen generada` cuando existe el archivo, y a `aprobada` cuando el usuario lo confirma.
+**Tres ejes de estado, que no se mezclan** (un estado de un eje nunca vale por el de otro):
+- **Documento** (brief, guion, desglose, plan de montaje, animática, lista de acabado): `propuesta` → `aprobada`. Aprueba el usuario.
+- **Recurso** (referencia, imagen, clip, audio): `prompt escrito` → `generado` → `revisado` → `aprobada` o `descartado`. Un prompt escrito no es un archivo: pasa a `generado` cuando existe el archivo (`imagen generada` es el mismo paso para imágenes) y a `revisado` y `aprobada` solo con lo que el usuario ha visto u oído.
+- **Entrega** (la pieza): `en montaje` → `en revisión` → `correcciones` → `exportado` → `verificado`. `exportado` y `verificado` (archivo reproducido completo) los confirma el usuario con evidencia.
 
-| Entregable | Tipo | Estado | Lo justifica (planos) | Prioridad |
+| Entregable | Tipo (documento · recurso · entrega) | Estado (del eje de su tipo) | Lo justifica (planos) | Prioridad |
 |---|---|---|---|---|
 | Brief | fase | | | |
 | Guion | fase | | | |
 | Desglose | fase | | | |
+| Animática | fase | | | |
+| Primer montaje | fase | | | |
+| Acabado y entrega | fase | | | |
 | (PJ01 …) | personaje / vista | | | Alta · Media · Baja |
 
 - Fase actual:
@@ -28,7 +34,13 @@ Estados: `propuesta` · `prompt escrito` · `imagen generada` · `aprobada`. Un 
 - Estilo y marca:
 - Dirección visual (opcional; luz · color y paleta · óptica y encuadre general · textura o acabado; referencias de look):
 - Restricciones:
-- Audio (`sin audio` · `audio externo` · `audio en Magnific`; por defecto `sin audio`):
+- Audio (`sin audio` · `audio externo` · `audio en Magnific`; si no consta, `sin audio`; el brief propone según el objetivo y lo marca `propuesta`):
+  - Qué se oye (voz · efectos · ambiente · música) y cómo se produce cada uno:
+- Alcance (100 % generativa · híbrida, con material propio):
+- Recursos disponibles (créditos o presupuesto, herramientas, material del usuario):
+- Plazo:
+- Reserva para regenerar:
+- Criterio de éxito:
 
 ## # GUION
 - Concepto o premisa:
@@ -67,6 +79,14 @@ Un bloque por plano:
 - Alternativa más sencilla:
 - Versión y aprobación:
 
+## # PROCEDENCIA
+Una fila por recurso que no se genera desde cero ni es del usuario, y por cada referencia que podría llegar a la pieza final:
+
+| Recurso | Papel (referencia · recurso final) | Origen y titular | Condiciones de uso | Autorización | Estado |
+|---|---|---|---|---|---|
+
+Estados: `consta` · `pendiente de verificar`. Una referencia que solo guía el aspecto no es un recurso final. Sin autorización conocida de un tercero (marca, voz, música, persona), no se da por permitido.
+
 ## # CONFIGURACIÓN
 - Modelos disponibles (informativo, sin selección automática):
 - Preferencias autorizadas:
@@ -80,6 +100,15 @@ Un bloque por plano:
 
 ---
 
+## produccion.md (registro de producción)
+Archivo aparte, junto al dossier; empieza cuando se genera el primer clip o sonido. Lo mantiene el usuario o la skill que reciba sus datos; nada se inventa: el coste y la duración real los trae el usuario.
+
+| Archivo | Versión | Plano o pieza | Duración real | Intervalo útil | Coste | Saldo | Estado |
+|---|---|---|---|---|---|---|---|
+| (E01-P02-v2.mp4) | v2 | E01-P02 | 5,1 s | 0:00–3:20 | | | elegido · descartado · pendiente |
+
+El saldo se compara con la reserva del brief. El intervalo útil lo usa `edit-plan` para elegir tramos.
+
 ## prompts.md (registro de prompts)
 Archivo aparte, junto al dossier. Es lo que el usuario abre para pegar en la app. Lo escribe la skill que entrega el prompt (REGLAS §9); el dossier solo lleva el estado en `# ESTADO`.
 
@@ -89,7 +118,7 @@ Arriba, una tabla con **lo vigente** (un prompt por fila):
 |---|---|---|---|
 | (REF-01 hoja A) | v2 | prompt escrito | (imagen) |
 
-Estados: `prompt escrito` · `imagen generada` · `aprobada` · `descartado` · `sustituido`. Debajo, una entrada por prompt, la vigente primero y las anteriores al final:
+Estados (eje recurso): `prompt escrito` · `generado` (`imagen generada`) · `revisado` · `aprobada` · `descartado` · `sustituido`. Debajo, una entrada por prompt, la vigente primero y las anteriores al final:
 
 ```
 ## REF-01 hoja A · v2 — prompt escrito

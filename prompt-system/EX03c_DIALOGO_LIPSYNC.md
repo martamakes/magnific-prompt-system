@@ -33,7 +33,7 @@ Con la vía B, el prompt de voz lo redacta `audio-prompt`; con la A, `video-prom
 ## Qué haces
 
 1. **Decide el campo `Audio:`** del proyecto: `audio en Magnific` para la vía A o la B dentro de la app; `audio externo` si la voz la haces fuera.
-2. **Escribe la frase y apruébala.** En su idioma original, en bloque propio, sin añadidos. Cuenta cuánto tarda en decirse y comprueba que cabe en el plano.
+2. **Escribe la frase y apruébala.** En su idioma original, en bloque propio, sin añadidos. Mide cuánto tarda en decirse (lectura en voz alta o voz real) y compruébalo con el plano antes de fijar la duración. Si no cabe: recortar el texto, cambiar la interpretación o replantear el plano; elige el usuario.
 3. **Elige una vía** y anota el motivo.
 4. **Imagen inicial del personaje** hablando-a-punto-de-hablar: boca cerrada o relajada, mirada definida. «Boca abierta» no equivale a hablar: se especifica.
 5. **Redacta el prompt** (`video-prompt` para la A, `audio-prompt` para la B).

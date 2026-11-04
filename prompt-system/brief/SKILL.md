@@ -24,18 +24,19 @@ Lo que el usuario pueda dar; no se exige todo:
 2. Rellena lo que la idea ya contiene. Pregunta solo lo que falte y cambie el resultado (máx. 3).
 3. «Sin marca», «sin referencias» y «a tu criterio» son respuestas completas: no insistas. Si delega, propón y marca `propuesta`.
 4. **Audio:** pregúntalo siempre, en una línea, con estas opciones y en este orden:
-   - **A. Sin audio** (recomendada): pieza muda, sin diálogo, voz en off, efectos ni música.
+   - **A. Sin audio:** pieza muda, sin diálogo, voz en off, efectos ni música.
    - **B. Audio externo:** se piensa el sonido (diálogo, efectos, música), pero se pone fuera de Magnific.
    - **C. Audio en Magnific:** el prompt de vídeo incluye el audio y lo genera el modelo. Avisa: más riesgo de fallo y más gasto, sobre todo con diálogo.
 
-   Si no contesta, o dice «a tu criterio», queda A. Se registra en `Audio:` como `sin audio`, `audio externo` o `audio en Magnific`.
-5. **Dirección visual (opcional):** pregúntala en una línea, solo si la pieza tendrá varios planos o clips que deben parecer de la misma película: luz, color y paleta, óptica y encuadre general, textura. Vale una descripción, una imagen de referencia o «a tu criterio» (propón y marca `propuesta`); «sin look definido» es respuesta completa. Una imagen de look se registra como `de referencia` y su papel es solo el aspecto (luz, color, tratamiento), no su contenido.
-6. **Destino vertical:** si el destino es una app de vídeo vertical (Reels, TikTok, anuncios), anota en «Restricciones» que la composición respeta su zona segura (`PLATAFORMAS.md`) y deja el hueco para los rótulos y la CTA. Destino sin perfil: `pendiente de verificar`, sin inventar medidas.
-7. Redacta el brief y, si hay dossier, indica la sección PROYECTO resultante.
-8. Si hay una decisión creativa real (enfoques muy distintos), ofrece directa / narrativa / experimental en una línea cada una y deja elegir; no desarrolles las tres.
+   Si no contesta, o dice «a tu criterio», propón la opción que pida el objetivo de la pieza (una pieza narrativa, publicitaria o con voz rara vez es muda) y márcala `propuesta`; di en una línea por qué. Excepción: el primer ejercicio (EX00) es sin audio. Se registra en `Audio:` como `sin audio`, `audio externo` o `audio en Magnific`. Si el sonido es parte de la pieza, anota también qué se oye (voz, efectos, ambiente, música); cómo y con qué herramienta se produce cada uno lo decide `audio-prompt`, y puede ser distinto por tipo.
+5. **Alcance y recursos (una línea, solo lo que cambie el plan):** si la pieza es 100 % generativa o híbrida (con material propio: grabaciones, fotos, logos, música); qué recursos hay (créditos o presupuesto, herramientas, material del usuario); plazo; reserva para regenerar (por defecto, `propuesta`: un margen sobre el coste previsto); y el criterio de éxito (qué hace que la pieza se dé por buena). «A tu criterio» → propón y marca `propuesta`. Si hay material con terceros (marcas, voces, música, personas), anota de quién es y qué permiso consta; sin permiso conocido, `pendiente de verificar`.
+6. **Dirección visual (opcional):** pregúntala en una línea, solo si la pieza tendrá varios planos o clips que deben parecer de la misma película: luz, color y paleta, óptica y encuadre general, textura. Vale una descripción, una imagen de referencia o «a tu criterio» (propón y marca `propuesta`); «sin look definido» es respuesta completa. Una imagen de look se registra como `de referencia` y su papel es solo el aspecto (luz, color, tratamiento), no su contenido.
+7. **Destino vertical:** si el destino es una app de vídeo vertical (Reels, TikTok, anuncios), anota en «Restricciones» que la composición respeta su zona segura (`PLATAFORMAS.md`) y deja el hueco para los rótulos y la CTA. Destino sin perfil: `pendiente de verificar`, sin inventar medidas.
+8. Redacta el brief y, si hay dossier, indica la sección PROYECTO resultante.
+9. Si hay una decisión creativa real (enfoques muy distintos), ofrece directa / narrativa / experimental en una línea cada una y deja elegir; no desarrolles las tres.
 
 ## Salida
-Sección PROYECTO: Objetivo · Público · Destino y formato · Duración objetivo · Estilo y marca · Dirección visual (si la hay) · Restricciones · Audio. Cada punto con origen. Al final, «Decisiones pendientes» solo si las hay.
+Sección PROYECTO: Objetivo · Público · Destino y formato · Duración objetivo · Estilo y marca · Dirección visual (si la hay) · Restricciones · Audio · Alcance y recursos · Criterio de éxito. Cada punto con origen. Al final, «Decisiones pendientes» solo si las hay.
 
 ## Se detiene si
 Faltan objetivo o destino y no puede proponerlos de forma razonable: pregunta.

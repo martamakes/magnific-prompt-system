@@ -21,7 +21,9 @@ Una skill coordinadora (el director, que se activa con la palabra **Amenábar**)
 | Prompt de música, efectos, voz o ambiente | `audio-prompt` |
 | Previsualización 3D (solo especificación, opcional) | `scene-previz` |
 | Resultado que falla | `repair` |
-| Orden, uniones y sonido en montaje | `edit-plan` |
+| Animática, orden, uniones y sonido en montaje | `edit-plan` |
+| Acabado, especificación de entrega, exportación y archivo | `finish-deliver` |
+| Revisión de calidad e incidencias | `quality-review` |
 
 Documentos comunes: `REGLAS.md` (reglas de todas las skills), `PROYECTO.md` (plantilla del dossier), `MODELOS.md` y `PLATAFORMAS.md` (límites por modelo y zonas seguras por destino), `EX00_KISS.md` (ejercicio inicial) y `FLUJO-idea-a-storyboard.md` (guía de uso paso a paso).
 

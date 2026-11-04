@@ -40,7 +40,7 @@ Los tipos no se mezclan en un prompt: cada uno es una pieza distinta.
 
 **Voz** (`documentada`, tutorial de Speak de Magnific)
 - Texto exacto aprobado, tal cual, en su idioma original (REGLAS §9) y en bloque propio. La interpretación (tono, ritmo, emoción) va aparte, una por voz.
-- Voz: la elige el usuario en el catálogo de la herramienta; no la inventes. Si el sonido va sobre un clip, indica que el habla debe caber en la duración del plano o que la duración se ajustará (en Speak, el modo de extensión «auto» adapta el vídeo al habla; dato de tutorial, sin comprobar con tu cuenta).
+- Voz: la elige el usuario en el catálogo de la herramienta; no la inventes. Si el sonido va sobre un clip, mide antes la lectura o la voz real y compárala con la duración del plano. Si no cabe y la duración es obligatoria, no ajustes en silencio: el usuario elige entre recortar el texto, cambiar la interpretación (ritmo) o replantear los planos; si la duración es flexible, indica que se ajustará (en Speak, el modo de extensión «auto» adapta el vídeo al habla; dato de tutorial, sin comprobar con tu cuenta).
 - No añadas frases, risas ni gritos no previstos (REGLAS §8).
 
 **Aislar un sonido** (`documentada`)

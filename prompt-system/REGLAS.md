@@ -8,7 +8,7 @@ El sistema prepara una producción audiovisual por partes, **exclusivamente medi
 
 Recorrido completo:
 
-idea → brief → guion → desglose técnico por planos → desglose de recursos → referencias y composición → prompts de vídeo → revisión de resultados → plan de montaje.
+idea → brief → guion → desglose técnico por planos → desglose de recursos → referencias y composición → animática → prompts de vídeo y de audio → revisión de resultados → montaje → revisión del primer montaje → acabado y entrega → archivo.
 
 - No genera imágenes ni vídeos ni ejecuta operaciones de generación (MCP u otras).
 - No elige modelos por defecto.
@@ -110,7 +110,9 @@ Entrega el resultado propio de la tarea, sin preámbulos innecesarios:
 | breakdown | el desglose |
 | skills de prompting (incl. audio-prompt) | el prompt |
 | scene-previz | la especificación de una previsualización |
-| edit-plan | un plan de montaje |
+| edit-plan | un plan de montaje (o la animática) |
+| finish-deliver | la lista de acabado y entrega |
+| quality-review | el registro de incidencias |
 | repair | diagnóstico y prompt corregido |
 
 - **Registro de prompts (`prompts.md`).** En un proyecto con dossier, todo prompt que se entrega se guarda también en `prompts.md`, junto al dossier, sin que el usuario lo pida: es la única fuente de los prompts, y lo que se pierde al cerrar el chat no cuenta como entregado. Formato en `PROYECTO.md`. Al entregar: añade la entrada (o la versión nueva) y marca la anterior `descartado` o `sustituido`, sin borrarla. Un prompt de corrección va como entrada propia, con la versión que corrige. Si el asistente no puede escribir archivos, entrega la entrada completa lista para pegar en `prompts.md` y dilo en una línea. En una petición suelta, sin dossier, no se crea.
@@ -136,6 +138,10 @@ Entrega el resultado propio de la tarea, sin preámbulos innecesarios:
 
 Una continuidad que no queda resuelta por escrito no se declara correcta: se resuelve o se marca como pendiente. Comprueba las decisiones contra el texto del propio desglose, no solo la presencia de campos.
 
+**Estados.** Tres ejes (documento, recurso, entrega) definidos en `PROYECTO.md`. Ninguna skill marca `aprobada`, `revisado`, `exportado` ni `verificado` sin evidencia del usuario; un documento `aprobada` no aprueba los recursos que describe.
+
 ## 11. Material de terceros
+
+**Procedencia y permisos.** Distingue siempre una referencia (guía el aspecto) de un recurso final (entra en la pieza). De todo recurso final que no sea generado ni propio, registra origen, titular, condiciones de uso y autorización en `# PROCEDENCIA`; si no consta, `pendiente de verificar`. No afirmes que algo se puede usar: el sistema no da asesoría legal.
 
 Se reutiliza lo aprovechable, pero no se heredan automáticamente: preferencias estéticas, prohibiciones universales, longitudes obligatorias, límites técnicos sin verificar ni fórmulas presentadas como garantía.

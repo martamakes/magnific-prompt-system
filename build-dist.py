@@ -5,6 +5,7 @@ Fuente de verdad: prompt-system/. dist/ se regenera entero; no se edita a mano.
 Formato de salida: una sola skill (SKILL.md = director) + references/ con el resto.
 Uso: python3 build-dist.py
 """
+import json
 import re
 import shutil
 import zipfile
@@ -16,12 +17,12 @@ DIST = ROOT / "dist"
 OUT = DIST / "magnific-prompt-system"
 REFS = OUT / "references"
 
-SKILLS = ["brief", "script", "breakdown", "review", "coherencia", "character-ref", "prop-ref", "location-ref", "shot-composer", "video-prompt", "audio-prompt", "scene-previz", "edit-plan", "repair"]
+SKILLS = ["brief", "script", "breakdown", "review", "coherencia", "character-ref", "prop-ref", "location-ref", "shot-composer", "video-prompt", "audio-prompt", "scene-previz", "edit-plan", "finish-deliver", "quality-review", "repair"]
 DIRECTOR_DESC = (
     "Prepara por escrito producciones audiovisuales con IA para pegar los prompts en Magnific "
     "(imagen Nano Banana, vídeo Seedance). Úsala cuando el usuario diga «oye Amenábar», «Amenábar, …», "
     "«sigue mi proyecto», «¿en qué fase estoy?» o «¿qué toca ahora?», o pegue un dossier; también para "
-    "brief, guion, desglose, revisión del desglose con un estilo («revisa con estilo redes»), plan de referencias y referencias de personaje, localización u objeto e imagen inicial y prompt de vídeo de un plano. "
+    "brief, guion, desglose, animática, montaje, acabado y entrega, revisión de calidad, revisión del desglose con un estilo («revisa con estilo redes»), plan de referencias y referencias de personaje, localización u objeto e imagen inicial y prompt de vídeo de un plano. "
     "Dice en qué fase está el proyecto y cuál es el siguiente paso. No genera imágenes ni vídeo. "
     "Audio: sin audio, externo o en Magnific, según el proyecto."
 )
@@ -79,15 +80,16 @@ director = strip_frontmatter((SRC / "director" / "SKILL.md").read_text(encoding=
 director = fix_paths(director)
 for name in SKILLS:
     director = director.replace(f"| {name} |", f"| `references/{name}.md` |")
-root = f"---\nname: magnific-prompt-system\ndescription: {DIRECTOR_DESC}\n---\n\n{director}"
+# json.dumps da un escalar entrecomillado, YAML válido aunque la descripción lleve «: ».
+root = f"---\nname: magnific-prompt-system\ndescription: {json.dumps(DIRECTOR_DESC, ensure_ascii=False)}\n---\n\n{director}"
 (OUT / "SKILL.md").write_text(root, encoding="utf-8")
 
-# Zip.
+# Zip de importación: SKILL.md en la raíz del ZIP (rutas relativas a OUT).
 zip_path = DIST / "magnific-prompt-system.zip"
 if zip_path.exists():
     zip_path.unlink()
 with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as z:
     for f in sorted(OUT.rglob("*")):
-        z.write(f, f.relative_to(DIST))
+        z.write(f, f.relative_to(OUT))
 
 print(f"OK: {OUT} y {zip_path}")

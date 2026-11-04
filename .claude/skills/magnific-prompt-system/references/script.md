@@ -32,7 +32,8 @@ Si `# GUION` del dossier es un puntero a un archivo aparte (`guion.md`, ver `ref
 - sinopsis breve, si aporta;
 - guion por escenas o bloques (`E01`, `E02`…);
 - acciones visibles;
-- diálogos, voz en off y textos, solo si `Audio:` no es `sin audio` (texto exacto; los textos en pantalla no son audio);
+- textos en pantalla (rótulos, títulos), en cualquier proyecto que los pida, también `sin audio` (texto exacto);
+- diálogos y voz en off, solo si `Audio:` no es `sin audio` (texto exacto);
 - intención sonora, solo si `Audio:` no es `sin audio`;
 - decisiones pendientes.
 

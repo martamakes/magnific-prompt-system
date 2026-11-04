@@ -48,5 +48,5 @@ Dossier (`proyecto.md`), `guion.md`, `desglose.md` y lo que enlacen, más `PLATA
 ## Límites
 - No decide qué archivo tiene razón si no consta; lo pregunta.
 - No cambia duración, número de planos ni textos aprobados sin autorización.
-- No valida calidad visual ni capacidades de modelo.
+- No valida calidad visual ni sonora ni capacidades de modelo: la calidad de lo producido la guía `quality-review`.
 - Para el estado de la copia instalada de las skills usa `check-sync.py` (en la raíz del repo); no lo adivines.

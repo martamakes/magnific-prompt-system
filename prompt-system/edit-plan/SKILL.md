@@ -1,6 +1,6 @@
 ---
 name: edit-plan
-description: Redacta el plan de montaje de una pieza: orden y duración de los clips, tipo de unión entre clips, colocación y mezcla del sonido y texto en pantalla. Úsala cuando el usuario diga «plan de montaje», «cómo monto los clips», «orden de clips», «dónde va el sonido», «transiciones» o «títulos». No monta ni genera.
+description: Redacta el plan de montaje de una pieza, con orden y duración de los clips, tipo de unión entre clips, colocación y mezcla del sonido y texto en pantalla; también la animática previa y la revisión del primer montaje. Úsala cuando el usuario diga «plan de montaje», «animática», «cómo monto los clips», «orden de clips», «dónde va el sonido», «transiciones» o «títulos». No monta ni genera.
 ---
 
 # Edit-plan
@@ -8,11 +8,15 @@ description: Redacta el plan de montaje de una pieza: orden y duración de los c
 Lee `REGLAS.md` antes de actuar.
 
 ## Misión
-Entregar el plan para montar los clips en el editor que el usuario use: qué va en qué orden, cómo se unen, dónde entra cada sonido y qué texto aparece. Es el último paso del recorrido; no genera nada ni elige editor.
+Entregar el plan para montar los clips en el editor que el usuario use: qué va en qué orden, cómo se unen, dónde entra cada sonido y qué texto aparece. No genera nada ni elige editor. Tras el primer montaje, la revisión la guía `quality-review` y el acabado y la entrega, `finish-deliver`.
+
+## Dos momentos
+- **Animática (antes de generar vídeo).** Con las imágenes del storyboard o las referencias aprobadas, los tiempos orientativos del desglose y el sonido provisional (guía de voz, música de ejemplo): una secuencia de imágenes con duración y sonido para ver si la pieza funciona en el tiempo. Cada fila: orden · imagen · duración · sonido provisional · nota. La animática pasa de `propuesta` a `aprobada` solo tras una **prueba temporal real** que hace el usuario (la ve montada, con la voz leída o medida) y reajusta duraciones o planos antes de gastar en vídeo. Si el habla marca el ritmo, la prueba es la lectura o la voz real (ver `breakdown`).
+- **Montaje con materiales reales.** Con los clips y el sonido generados, el plan de abajo. Tras montar, el usuario trae el primer montaje a `quality-review`.
 
 ## Entradas
 - Guion, desglose y `# PROYECTO` (duración objetivo, formato, `Audio:`).
-- Los clips: los planos del desglose y, si existen, lo que se generó de verdad (duración real, último fotograma, qué falló).
+- Los clips: los planos del desglose y, si existen, lo que se generó de verdad (duración real, último fotograma, qué falló) y el registro de producción (`produccion.md`, ver `PROYECTO.md`), de donde salen archivo, versión, duración real e intervalo útil.
 - Si un plano tiene **varios intentos** generados (`-v2`, `-v3`…), cuál es cada uno y qué tiene de bueno o de malo; el usuario lo dice, no lo ves tú.
 - El sonido anotado por tipo en el desglose y, si existen, los prompts o piezas de `audio-prompt`.
 - Sin dossier, acepta una lista de clips y una descripción del usuario; lo no dicho que cambie el resultado se pregunta o se marca `propuesta`.
@@ -48,8 +52,8 @@ En este orden, solo lo que la pieza necesita:
 
 ## Formato y entrega
 - **Dos tablas.** Clips: una fila por clip o tramo (orden · clip · duración · unión con el siguiente · texto). Sonido: una fila por pieza (tipo · origen · a qué va · entrada · mezcla), porque un ambiente puede cruzar varios clips. Debajo, lo que no cabe en las tablas.
-- **Petición suelta:** el plan, sin preámbulo. **Proyecto:** el plan y la actualización breve del estado (`plan escrito`, nunca «montado»).
-- Los tiempos son **estimación escrita** hasta que se montan. El plan no fija software, formato de exportación ni ajustes de color (no los pide el recorrido).
+- **Petición suelta:** el plan, sin preámbulo. **Proyecto:** el plan y la actualización breve del estado (documento `propuesta`: animática o plan; el eje de entrega no pasa de `en montaje` sin que el usuario monte, nunca «montado» por tu cuenta).
+- Los tiempos son **estimación escrita** hasta que se montan. El plan no fija software, formato de exportación ni ajustes de color: eso es `finish-deliver`.
 - **Cierre:** línea aparte con el estado y el siguiente paso con la frase exacta para pegar (por ejemplo, el prompt de sonido que falta o el clip que hay que regenerar con `repair`).
 
 ## Se detiene y pregunta si
@@ -60,7 +64,7 @@ En este orden, solo lo que la pieza necesita:
 Máximo 3 preguntas, agrupadas.
 
 ## No hace
-No monta ni exporta, no elige editor ni herramienta, no genera clips ni sonido (eso es `video-prompt` y `audio-prompt`), no hereda estética ni prohibiciones universales de terceros (REGLAS §11).
+No monta ni exporta (la exportación es de `finish-deliver`), no elige editor ni herramienta, no genera clips ni sonido (eso es `video-prompt` y `audio-prompt`), no hereda estética ni prohibiciones universales de terceros (REGLAS §11).
 
 ## Revisión (REGLAS §10, más)
 - la suma de duraciones frente a la objetivo, sin cambiar la total en silencio;
@@ -70,5 +74,6 @@ No monta ni exporta, no elige editor ni herramienta, no genera clips ni sonido (
 - sonido coherente con `Audio:`; mezcla de lo que ya trae cada clip;
 - texto en pantalla exacto y solo el pedido;
 - cada tramo elegido de varios intentos con su intento, sus segundos y su motivo, y la continuidad comprobada en las uniones entre intentos;
+- la animática no se da por aprobada sin prueba temporal real del usuario;
 - tiempos marcados como estimación; el plan no se presenta como montaje hecho;
 - ningún límite ni capacidad de herramienta inventado.

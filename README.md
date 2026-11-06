@@ -1,6 +1,6 @@
 # Magnific prompt system
 
-Sistema de skills **solo de redacción** para preparar producciones audiovisuales con IA. Te entrega prompts listos para pegar en [Magnific](https://www.magnific.com) (imagen con Nano Banana, vídeo con Seedance) y, si lo pides, prompts de audio para la herramienta que uses.
+Sistema de skills **solo de redacción** para preparar producciones audiovisuales con IA. Te entrega prompts listos para pegar en [Magnific](https://www.magnific.com) (imagen con Nano Banana, vídeo con Seedance) y, si lo pides, prompts de audio para las herramientas de audio de Magnific.
 
 **Qué no hace:** no genera imágenes, vídeo ni audio, no ejecuta operaciones en Magnific y no elige modelo por ti. Escribe; tú pegas, generas y apruebas.
 

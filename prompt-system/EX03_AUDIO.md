@@ -31,7 +31,15 @@ Las dos vías vienen del handbook y los tutoriales de Magnific (`documentada`, s
 
 ## Herramientas
 
-La herramienta la eliges tú: Magnific (incorpora ElevenLabs para voz y música), ACE Studio, Suno, ElevenLabs u otra. El sistema **no elige herramienta ni voz**. Controles y límites (duración, variaciones, créditos) de las que no son Magnific: pendiente de verificar.
+El audio se genera **solo en Magnific** (voz, efectos y música; ElevenLabs solo como tecnología integrada en Magnific). No se deriva a Suno, ACE Studio ni otros servicios. El sistema **no elige la voz**. Controles y límites (duración, variaciones, créditos): los de los tutoriales de Magnific son `documentada`; lo demás, pendiente de verificar.
+
+## Cuándo se hace cada audio
+
+| Momento | Qué | Notas |
+|---|---|---|
+| Preproducción | Diálogo o voz en off para la **animática** | Fija tiempos, pausas y ritmo. Se conserva si sirve; no se regenera por defecto |
+| Sobre el clip | Sincronía labial (`EX03c`) | Tarea distinta del diálogo de animática |
+| Final del montaje | Ambientes, efectos y banda sonora | Con el vídeo delante; tres capas separadas (música · ambientes · efectos), mezcla en el editor |
 
 ## Cómo se trabaja, siempre igual
 

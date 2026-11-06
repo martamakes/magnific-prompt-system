@@ -109,6 +109,8 @@ Archivo aparte, junto al dossier; empieza cuando se genera el primer clip o soni
 
 El saldo se compara con la reserva del brief. El intervalo útil lo usa `edit-plan` para elegir tramos.
 
+**Borrador primero, calidad final después.** Si el modelo ofrece un modo de borrador (Seedance lista «Draft», `references/modelos.md`), itera en él y pasa a la calidad final solo la toma elegida. El modo no es un estado: se anota en la columna Versión (`v2 · Draft`, `v2 · 1080p`) y el Estado sigue siendo el de siempre. Los intentos en borrador que se descartan también llevan su fila y su coste, para que el saldo sea real. Criterio del caso de Magnific (Originals «Smoke»); `documentada` como caso. Ese mismo caso declara unas 9 generaciones por plano final: úsalo solo como orden de magnitud al fijar la reserva del brief, nunca como norma ni como cifra de tu modelo.
+
 ## prompts.md (registro de prompts)
 Archivo aparte, junto al dossier. Es lo que el usuario abre para pegar en la app. Lo escribe la skill que entrega el prompt (REGLAS §9); el dossier solo lleva el estado en `# ESTADO`.
 

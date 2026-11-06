@@ -11,6 +11,7 @@ Crear desde texto · conservar identidad desde imágenes (foto real, fotograma a
 ## Formato según el uso (uno por entrega, sin paneles fijos)
 - *Vista general:* el espacio entero y reconocible, en el ángulo que más se usará. Es la referencia base.
 - *Vistas:* solo las que los planos necesiten (contraplano, desde la puerta, desde el fondo). Si hay plan de referencias, son las que figuran en él.
+- *Un plano general por lugar, como arranque:* para una preproducción ligera, un solo plano general de cada lugar puede bastar para que el modelo integre a los personajes y deduzca el resto (caso de Magnific, Originals «Smoke»; `documentada` como caso, sin comprobar). **Excepción:** un lugar donde ocurre un diálogo con cortes entre ángulos necesita al menos un segundo ángulo; ahí es donde más se rompe la continuidad. Si hay plan de referencias (`breakdown` §D), manda el plan: una vista Alta del plan no se omite por esta regla.
 - *Detalle:* una zona concreta (altar, ventana, valla, mesa) cuando un plano la va a mostrar de cerca.
 - *Distribución:* esquema en planta (accesos, posiciones de elementos fijos, hacia dónde mira cada vista). Úsalo cuando los planos cortan entre varios ángulos del mismo lugar y hay que mantener la geografía y el eje de acción (`breakdown`, «Disposición espacial»).
 

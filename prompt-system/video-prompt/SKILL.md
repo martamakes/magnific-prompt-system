@@ -76,6 +76,8 @@ Lo que no se menciona lo decide el modelo, también la cámara: si el desglose f
 - **Multitudes:** hipótesis de ese mismo tutorial, sin verificar: muchas personas animadas a la vez tienden a hacer todas lo mismo o a fundirse. Alternativa: un solo personaje que reacciona mientras las demás personas quedan quietas o miran. Si el desglose pide una multitud en acción, avísalo y propón esta simplificación en CAMBIOS PENDIENTES.
 - **Texto en pantalla** (títulos, letreros que el plano no necesite): fuera del prompt, al montaje. Si un letrero debe verse, es parte de la imagen y no se puede asegurar (dilo).
 - **No describas atributos fijos que ya están en la imagen o referencia** con otras palabras: pueden derivar. Cita la referencia.
+- **Lados de pantalla y mirada.** Si la escena depende de quién ve qué, fija en mayúsculas el lado de cada personaje y hacia dónde mira o no mira («el menor siempre a la IZQUIERDA; nunca mira a la DERECHA durante este plano»). Caso de estudio de Magnific (Originals «Smoke»); `documentada` como caso, su eficacia con otro modelo sin comprobar.
+- **Gesto con significado: descríbelo con precisión y di qué no es.** «Yema del índice sobre la punta de la nariz, sostenida» y, si puede confundirse, «no es un gesto de silencio». El caso de Smoke cuenta que sin ese detalle el modelo lo leyó como un «shh». Misma fuente y misma cautela.
 
 ## Duración y tramos
 - La duración sale del desglose. Los límites del modelo (duración mínima y máxima, referencias admitidas, primer y último fotograma, audio) salen del perfil del modelo de la tarea en `MODELOS.md`; si falta el perfil o el campo, *pendiente de verificar*. Comprueba que la vía elegida es compatible: en el perfil de Seedance, primer y último fotograma no se combinan con referencias.
@@ -86,11 +88,28 @@ Lo que no se menciona lo decide el modelo, también la cámara: si el desglose f
 - Un tramo que continúa otro parte del fotograma final aprobado del anterior (continuidad, como en `shot-composer`).
 - Cambiar duración total o número de planos requiere autorización.
 
+## Unidad multiplano
+Cuando una unidad de generación lleva varios planos en un solo prompt (el caso de Smoke: 6 planos, 27 s, 11 referencias; `documentada` como ejemplo de Magnific, sin verificar con tu modelo). Estructura, en este orden:
+1. **Look y sonido:** aspecto (grado, óptica, luz) y qué se oye, una vez para toda la unidad.
+2. **Quién es quién:** cada personaje ligado a su referencia, con vestuario, lado de pantalla y hacia dónde mira.
+3. **Acción plano a plano:** `PLANO n — 00:00–00:04 — Referencia: …`, una acción por plano, con su tiempo.
+4. **Cierre:** una o dos frases que repiten lo que no debe cambiar (identidad, posiciones, dirección del movimiento, el gesto clave).
+
+Reglas de la unidad:
+- **Límites del modelo antes de escribirla** (`MODELOS.md`): en Seedance 2.0, hasta 6 planos, 1–12 s cada uno, total ≤15 s y 9 imágenes de referencia; en 2.5, hasta 6 planos, 1–12 s cada uno, total ≤30 s y 30 imágenes. Smoke (27 s, 6 planos, 11 referencias) cabe en 2.5 y no en 2.0. Si la unidad no cabe, divídela en unidades y usa el estado final de una como punto de partida de la siguiente.
+- **Un fotograma de referencia por plano**, citados en orden, además de las hojas de personaje. Fija encuadre, lugar y luz de cada plano.
+- Pide que cada plano se renderice **a pantalla completa, sin reproducir la hoja de referencia, bordes ni etiquetas**.
+- Entre planos distintos, **corte directo** salvo que el desglose pida otra unión; si no debe haber zoom ni empuje entre ellos, dilo.
+- **Comprueba la suma:** los tiempos de los planos suman la duración declarada, sin solapes ni huecos (el ejemplo publicado de Smoke dice 20 s y suma 27, y un corte «a 00:19» cae dentro de un plano que acaba en 00:20).
+- Las etiquetas de referencia (`@img1`…) solo si la interfaz de la tarea las usa (ver arriba); una etiqueta por referencia, sin repetir la misma para dos personajes.
+- Si un plano falla dentro de una unidad larga, no regeneres toda: `repair` propone extraer su fotograma y generarlo solo.
+
 ## Audio (REGLAS §8)
 - `sin audio`: ni sonido ni diálogo ni boca hablando.
 - `audio externo`: ningún sonido descrito en el prompt; el sonido va a montaje. Cierra con «No music. No subtitles.» (el handbook de Magnific cierra así sus prompts para obtener un clip limpio; `documentada`, avísalo en la entrega).
 - `audio en Magnific`: el prompt puede llevar diálogo (texto exacto aprobado, con interpretación aparte), efectos y música, **solo si** el modelo de la tarea lo soporta; si no consta, *pendiente de verificar*. Avisa del mayor riesgo y gasto. Forma documentada en el handbook de Magnific: efectos y ambiente en palabras llanas (`SFX: …`), diálogo entre comillas atribuido a un personaje con la entrega descrita, un solo hablante por beat, «No music» para obtener solo efectos y añadir la pista en montaje, «No subtitles» para evitar subtítulos incrustados.
 - Si el audio se añade después con las herramientas de la app (REGLAS §8), este prompt queda sin audio; los prompts del sonido los escribe `audio-prompt` y su colocación pasa al plan de montaje. Dato de los tutoriales: en la voz a partir de texto, el modo «extender» en automático ajusta la duración del vídeo a la del habla.
+- **Diálogo en el vídeo** (`audio en Magnific`, modelo que lo soporte): di el idioma de la frase; quién habla («solo X e Y hablan»); voces distintas y acordes a la edad; entrega audible, con ritmo natural y labios sincronizados. **Ancla la última palabra a un instante** («termina en 00:23») y deja la pausa final que pida el guion. Mide la frase antes de fijar el instante (ver `breakdown`). Forma tomada de Smoke; su cumplimiento con otro modelo, sin comprobar.
 - No añadas diálogo, risa ni gritos no previstos.
 
 ## Editar, versiones y fallos
@@ -124,6 +143,8 @@ No genera, no elige modelo, no crea imagen ni recursos (`shot-composer`, `*-ref`
 - si la cámara se mueve, se dice qué aporta, el encuadre de inicio y de fin, y si lo que revela está en la imagen o en una referencia aprobada;
 - recorrido de lo que se mueve (desde dónde, hacia dónde), manos y estado final coherentes con el desglose y con el plano siguiente;
 - tramos con estado final y tiempos marcados como estimación;
+- en una unidad multiplano: estructura look · quién es quién · planos · cierre, una referencia por plano y la suma de tiempos sin solapes;
+- lados de pantalla y mirada fijados cuando la escena depende de ellos; el gesto con significado, descrito con precisión;
 - sin negación de objetos visibles ni texto en pantalla no resuelto;
 - audio conforme al campo `Audio:`;
 - el prompt no se presenta como clip existente;

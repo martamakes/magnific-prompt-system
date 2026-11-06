@@ -33,6 +33,7 @@ En este orden, solo lo que el resultado muestra:
 - Si el fallo nace en el desglose (plano sobrecargado, continuidad que no cierra), propón el cambio aparte y anótalo en CAMBIOS PENDIENTES; no lo apliques.
 - **Tras varios intentos sin mejora, simplifica** el plano (acción, cámara, número de tramos) en vez de reformular otra vez. Si lo simplificado cambia el desglose aprobado, pide autorización.
 - Si el fallo está en la imagen inicial, corrige la imagen antes de gastar en vídeo.
+- **Plano fallido dentro de una unidad larga:** no regeneres toda la unidad. Propón extraer el fotograma que mejor fija la posición del personaje y el entorno (extractor de medios de la app, con selección manual) y generar ese plano solo, con un prompt nuevo. Da más control de la actuación y de la cámara y ahorra generaciones, pero puede afectar a la calidad final: no es lo habitual. Pasos y nombre exacto del extractor, a confirmar en la app. Fuente: Magnific, Originals «Smoke»; `documentada`.
 
 ## Formato y entrega
 - **Petición suelta:** diagnóstico en pocas líneas (qué falla · causa probable `propuesta`) y el prompt corregido en un único bloque de código, en inglés (REGLAS §9). Junto a él, lo que se protege y qué mirar en el siguiente resultado (REVISAR DESPUÉS).

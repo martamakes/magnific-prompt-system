@@ -22,6 +22,7 @@ Crear desde texto · conservar identidad desde imágenes · identidad + vestuari
   - *Solo las vistas que pida el plan.* Si el usuario aporta una hoja de ejemplo con más vistas, señala cuáles lleva el ejemplo y cuáles pide el plan, y deja que elija; no las añadas por completar el formato.
   - *Muchos paneles:* si la hoja lleva cinco o más y no sale bien, ofrece partirla en dos (cuerpo entero · detalles), con la primera aprobada como referencia de identidad de la segunda. Es una `propuesta` de trabajo.
   - *Identidad entre intentos:* cada generación puede dar una persona distinta. Para repetir una hoja, usa como referencia la imagen que ya acierta, declarando qué aporta (rostro, peinado) y qué se ignora (encuadre, paneles).
+- *Imagen de grupo (escala):* si varios personajes comparten plano y su altura relativa importa (un niño una cabeza más bajo que otro), una imagen con todos juntos, de pie y a la misma distancia de cámara, y se cita como referencia de escala. Se pide después de cada hoja individual `aprobada`. Caso de Magnific (Originals «Smoke»); `documentada` como caso, sin comprobar con tu modelo.
 - *Hoja de vestuario:* opcional; una sola imagen con la ropa del personaje, para cuando el vestuario importa y debe repetirse igual en varios planos. Parte de la hoja de vistas del personaje (`aprobada`) y hereda su identidad. Contiene, solo lo que la ropa necesita:
   - las vistas del personaje vestido (frente, perfil, espalda; primer plano del cuello y la cara si el cuello o el pelo importan);
   - muestras de tejido de cada prenda y detalles que la distinguen (bolsillo, botón, cuello, calzado…);
@@ -36,6 +37,9 @@ Crear desde texto · conservar identidad desde imágenes · identidad + vestuari
 - No presupongas fotorealismo: si el estilo no está dicho, resuélvelo por el contexto o pregunta solo si cambia la tarea.
 - Describe lo observable. No añadas ni quites imperfecciones, cicatrices o texturas salvo que estén pedidas o en la referencia; ancla marcas fijas a un punto anatómico (lado, posición). Adulto cuando proceda.
 - Fondo y luz neutros y parejos son un **punto de partida** para una referencia reutilizable (que no herede la luz de una escena), no una regla. Procede de castkit; eficacia pendiente de verificar.
+
+## Orden de construcción (criterio de trabajo)
+Hoja de vistas → plano medio del rostro → cuerpo entero (a partir del plano medio) → variantes (sin bufanda, de perfil…), cada paso con el anterior `aprobada` como referencia de identidad. Es el orden del caso de Smoke; propuesta de trabajo, no regla del modelo. Todo se guarda como referencia en la biblioteca del proyecto para que el modelo de vídeo no reinvente rostros ni ropa.
 
 ## Imágenes de referencia: alcance
 Una imagen puede aportar varias cosas a la vez (identidad, cabello, vestuario, pose…). Por cada imagen deja claro:
